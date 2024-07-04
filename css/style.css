@@ -20,6 +20,7 @@ header {
     background-color: #123;
     color: #fff;
     padding: 10px 0;
+    font-size: large;
 }
 
 header nav {
@@ -32,7 +33,7 @@ header nav {
 }
 
 header nav img#logo {
-    height: 50px;
+    height: 60px;
     border-radius: 25%;
 }
 
