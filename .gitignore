@@ -1,1 +1,13 @@
-images
+#images
+# Ignore all image files
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.svg
+*.webp
+
+# Alternatively, ignore images in specific directories
+images/
+assets/images/
