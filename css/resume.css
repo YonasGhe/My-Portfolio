@@ -17,7 +17,6 @@ header {
     background-color: #123;
     color: #fff;
     padding: 10px 0;
-    font-size: large;
 }
 
 header nav {
@@ -30,7 +29,7 @@ header nav {
 }
 
 header nav img#logo {
-    height: 60px;
+    height: 50px;
     border-radius: 25%;
 }
 
@@ -91,7 +90,7 @@ section #my-cv {
           padding: 10px;
           color: blue;
           display: block;
-          max-width: 300px;
+          width: auto;
           background-color: #789;
           border-radius: 50px;
     }
@@ -163,7 +162,8 @@ section #my-cv {
     }
     
     .details h2 {
-        width: 1080px;
+        width: auto;
+        margin: 10px;
         background-color: #c3a8a8;
         border-radius: 100px;
         color: blue;
@@ -258,7 +258,7 @@ section #my-cv {
     padding: 15px;
     max-width: 600px;
     background-color: #c3a8a8;
-    border-radius: 100px;
+    border-radius: 75px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -333,4 +333,36 @@ footer .social-media img {
 
 }
 
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .about, .experience, .education, .experience-item, .competences, .brev {
+        width: auto;
+        max-height: 100%;
+    }
+
+    .about img {
+        width: 50%;
+    }
+
+    .details h2 {
+        width: auto;
+        margin: 10px;
+    }
+}
 
