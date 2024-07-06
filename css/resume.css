@@ -304,6 +304,29 @@ a:hover {
     color: darkviolet;
 }
 
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+section {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+section {
+    animation: slideInLeft 1.5s forwards;
+}
+
 footer {
     background-color: #123;
     color: #fff;

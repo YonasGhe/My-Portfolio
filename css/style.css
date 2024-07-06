@@ -83,6 +83,28 @@ div p {
     color: #f4f4f4;
 }
 
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 40px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+#introduction {
+    opacity: 0;
+    transform: translate3d(0, 40px, 0);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+#introduction {
+    animation: fadeInUp 2s forwards;
+}
+
 #introduction {
     display: flex;
     align-items: center;
@@ -95,6 +117,7 @@ div p {
     align-items: flex-start;
     
 }
+
 span {
     padding: 20px;
     color: darkorchid;
@@ -169,6 +192,7 @@ span {
     padding: 3rem;
 }
 
+
 .highlight-box {
     background: url('../images/438137453_977663637389166_7041372685070404303_n.jpg');
     padding: 15px;
@@ -184,6 +208,7 @@ span {
     justify-content: space-between;
     transition: transform 0.3s, box-shadow 0.3s;
     position: relative;
+    
 }
 
 .highlight-box img {
