@@ -101,6 +101,20 @@ div p {
 
 }
 
+
+@keyframes fadeInUp {
+    0% { transform: scale(0.5); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+  
+  .project{
+    animation-name: fadeInUp;
+    animation-duration: 5s;
+    animation-iteration-count: initial;
+    animation-timing-function: ease-in-out;
+  }
+
 .project img {
     width: 100%; 
     max-width: 350px; 
@@ -157,7 +171,7 @@ footer {
     text-align: center;
     padding: 10px 0;
     position: relative;
-    bottom: 0;
+    margin: auto;
     width: 100%;
 }
 

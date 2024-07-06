@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
         index = (index + 1) % texts.length;
     }
 
-    setInterval(changeText, 2000); // Change text every 2 seconds
+    setInterval(changeText, 2000); 
 });
 
 

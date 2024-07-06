@@ -333,10 +333,15 @@ footer {
     text-align: center;
     position: relative;
     width: 100%;
+    margin: auto;
 }
 
 .social-media {
     padding-bottom: 2rem;
+}
+
+footer h2 {
+    padding: 20px;
 }
 
 footer .social-media a {

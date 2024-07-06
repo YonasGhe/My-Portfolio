@@ -102,7 +102,7 @@ div p {
 }
 
 #introduction {
-    animation: fadeInUp 2s forwards;
+    animation: fadeInUp 2.5s forwards;
 }
 
 #introduction {
@@ -186,12 +186,12 @@ span {
     text-align: center;
 }
 
+
 #highlights {
     display: flex;
     justify-content: space-between;
     padding: 3rem;
 }
-
 
 .highlight-box {
     background: url('../images/438137453_977663637389166_7041372685070404303_n.jpg');
@@ -288,7 +288,7 @@ footer {
     text-align: center;
     position: relative;
     width: 100%;
-    padding: 5px;
+    margin: auto;
 }
 
 .social-media{
@@ -367,3 +367,5 @@ footer .social-media img {
         width: 90%;
     }
 }
+
+
