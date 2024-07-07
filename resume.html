@@ -6,6 +6,7 @@
     <title>Resume | Portfolio</title>
     <link rel="shortcut icon" href="images/portfilio.png" type="image/x-icon">
     <link rel="stylesheet" href="css/resume.css">
+    <script src="js/script.js" defer></script>
 </head>
 <body class="resume-page">
     <header>
@@ -13,7 +14,12 @@
             <a href="index.html">
                 <img src="images/4.png" alt="Logo" id="logo">
             </a>
-            <ul>
+            <button class="hamburger" aria-label="Toggle navigation menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </button>
+            <ul class="nav-links">
                 <li><a href="index.html#introduction">About Me</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="skills.html">Skills</a></li>
@@ -22,62 +28,56 @@
             </ul>
         </nav>
     </header>
-    
+
     <main>
         <section id="my-cv">
-        <div class="details">
-            <h2>About Me</h2>
-            <div class="about">
-            <h3>Name:</h3>
-            <p>Yonas Ghebremedhin</p>
-    
-            <h3>Email:</h3>
-            <p>yonas.ghebremedhin@gmail.com</p>
-            <h3>Tetefon:</h3>
-            <p> +467 35 87 18 54</p>
+            <div class="details">
+                <h2>About Me</h2>
+                <div class="about">
+                    <h3>Name:</h3>
+                    <p>Yonas Ghebremedhin</p>
+                    <h3>Email:</h3>
+                    <p>yonas.ghebremedhin@gmail.com</p>
+                    <h3>Phone:</h3>
+                    <p>+46 735 87 18 54</p>
+                    <h3>LinkedIn:</h3>
+                    <p><a href="https://www.linkedin.com/in/yonas-ghebremedhin-8bb353181/" target="_blank">Yonas G.</a></p>
+                    <a href="images/Yonas_Ghebrenedhin_CV.pdf" target="_blank" id="cv-link">
+                       <h3> <img src="images/depositphotos_159098592-stock-illustration-download-pdf-file-icon.jpg" alt="CV"> CV </h3>
+                    </a>
+                </div>
+            </div>
+        </section>
 
-            <h3>LinkedIn:</h3>
-            <p> <a href="https://www.linkedin.com/in/yonas-ghebremedhin-8bb353181/" target="_blank">Yonas G.</a></p>
-            
-                <a href="images/Yonas_Ghebrenedhin_CV.pdf" target="_blank" id="cv-link">
-                     <img src="images/depositphotos_159098592-stock-illustration-download-pdf-file-icon.jpg" alt="CV"> C.V</li>
-                </a>
-          
-        </div>
-    </div>
-</section>
+        <section class="my-cv">
+            <h2>Professional Summary</h2>
+            <div class="experience">
+                <h3>Profession</h3>
+                <p>I am passionate about continuous learning and staying updated with the latest industry trends. Dedicated web developer with a strong foundation in both front-end and back-end technologies. Experienced in designing and developing websites and web applications, with a keen eye for detail and a commitment to delivering high-quality, user-friendly products.</p>
+            </div>
+        </section>
 
-<section class="my-cv">
-        <h2>Professional Summary</h2>
-        <div class="experience">
-            <h3>Professions</h3>
-            <p>I am passionate about continuous learning and staying updated with the latest industry trends. Dedicated web developer with a strong foundation in both front-end and back-end technologies. Experienced in designing and developing websites and web applications, with a keen eye for detail and a commitment to delivering high-quality, user-friendly products.</p>
-                    
-        </div>
-    </section>
+        <section class="my-cv">
+            <h2>Education</h2>
+            <div class="education">
+                <h3>Diploma in Web Development, 2022 - ongoing</h3>
+                <h4>Gritacademy Yrkehögskola, Malmö</h4>
+                <ul>
+                    <li>Focused on training web developers for the e-commerce industry.</li>
+                    <li>Completed courses in HTML/CSS, UX/UI, Frontend JavaScript1 and 2, Database management, PHP and MySQL, Agile project management, Wordpress/woocommerce, Entrepreneurship and the consulting role, Digital business and marketing, and final exam work.</li>
+                    <li>Participated in a 2-year-long education with a 20-week LIA internship program.</li>
+                </ul>
+            </div>
+        </section>
 
-    <section class="my-cv"> 
-        <h2>Education</h2>
-          <div class="education">
-            <h3>Diploma in Web Development, 2022 - ongoing</h3>
-            <h4>Gritacademy Yrkehögskola, Malmö</h4>
-            <ul>
-                <li>Focused on training web developers for the e-commerce industry.</li>
-                <li>Completed courses in HTML/CSS, UX/IU, Frontend JavaScript1 and 2, Database management, PHP and MySQL, Agile project management, Wordpress/woocommerce, Entrepreneurship and the consulting role, Digital business and marketing and final exam work.</li>
-                <li>Participated in a 2 years long education with 20-week LIA internship program.</li>
-            </ul>
-            
-        </div>
-    </section>
-
-    <section class="my-cv">
+        <section class="my-cv">
             <h2>Teamwork Experience</h2>
             <div class="experience-item">
-                <h3>Teamwork projects</h3>
-                <h4> Various groupworks</h4>
+                <h3>Teamwork Projects</h3>
+                <h4>Various Group Works</h4>
                 <ul>
                     <li>I enjoy collaborating with others and believe in the power of teamwork to create impactful projects.</li>
-                    <li>Developed and maintained web applications using web development frameworks, bootstrap and other tools.</li>
+                    <li>Developed and maintained web applications using web development frameworks, bootstrap, and other tools.</li>
                     <li>Collaborated with designers and back-end developers to create a seamless user experience.</li>
                     <li>Implemented responsive design principles to ensure compatibility across various devices.</li>
                 </ul>
@@ -86,58 +86,55 @@
 
         <section class="my-cv">
             <h2>Skills</h2>
-            <div class="compotences"> 
-                <h3>My compotences</h3>
-            <ul>
-                <li>HTML, CSS, JavaScript, React.js </li>
-                <li>Node.js, Express.js</li>
-                <li>Bootstrap, Library and frameworks</li>
-                <li>UX/UI</li>
-                <li>PHP, MySQL and databases</li>
-                <li>Wordpress/wocommerce and shopify</li>
-                <li>Git & GitHub</li>
-                <li>Web Performance Optimization, Responsive Design</li>
-                <li>Cross-Browser Compatibility, Problem-Solving and Debugging</li>
-            </ul>
-    </div>
-</section>
+            <div class="competences">
+                <h3>My Competences</h3>
+                <ul>
+                    <li>HTML, CSS, JavaScript, React.js</li>
+                    <li>Node.js, Express.js</li>
+                    <li>Bootstrap, Libraries and Frameworks</li>
+                    <li>UX/UI</li>
+                    <li>PHP, MySQL and Databases</li>
+                    <li>Wordpress/Woocommerce and Shopify</li>
+                    <li>Git & GitHub</li>
+                    <li>Web Performance Optimization, Responsive Design</li>
+                    <li>Cross-Browser Compatibility, Problem-Solving and Debugging</li>
+                </ul>
+            </div>
+        </section>
 
-<section class="my-cv">
-        <h2>Personal Letter</h2>
-        <div class="brev">
-            <h3>Intership</h3>
-            <p>  I am studying programming in web development right now. The education is extended to 2 years at Gritacadamey Yrkehögskola in Malmö.
-                Training is aimed at web developers in the e-commerce industry who have a 20-week LIA internship with companies that I am looking for right now. I studied and practice designing websites using the programming language Html, Css, JavaScript React, Node.js, express.js, Php, MySQL databases and Wordpress/Wocommerce other soft skills. 
-                I invest in studying web development and concentrate on creating websites while learning about design E-commerce platforms with Html/Css, frontend JavaScript, UX, data management, entrepreneurship and consulting services, Digital business and marketing, Agile project management more others that are part of the Education. I will have 20 weeks of training after the course ends. I will be able to work as a web developer in these roles after completing my studies:- <br>
-                .web developer in e-commerce <br>
-                .system developer with an e-commerce focus <br>
-                .web designer <br>
-                I am looking for an internship where I can test my competence and lead to working life in the last semester of my studies.
-        </div>
-    </section>
+        <section class="my-cv">
+            <h2>Personal Letter</h2>
+            <div class="brev">
+                <h3>Internship</h3>
+                <p>I am studying programming in web development right now. The education is extended to 2 years at Gritacademy Yrkehögskola in Malmö.
+                    Training is aimed at web developers in the e-commerce industry who have a 20-week LIA internship with companies that I am looking for right now. I studied and practice designing websites using the programming languages HTML, CSS, JavaScript React, Node.js, Express.js, PHP, MySQL databases, and Wordpress/Woocommerce, among other soft skills. 
+                    I invest in studying web development and concentrate on creating websites while learning about design e-commerce platforms with HTML/CSS, frontend JavaScript, UX, data management, entrepreneurship and consulting services, digital business and marketing, Agile project management, and more. I will have 20 weeks of training after the course ends. I will be able to work as a web developer in these roles after completing my studies: <br>
+                    .Web Developer in E-commerce <br>
+                    .System Developer with an E-commerce Focus <br>
+                    .Web Designer <br>
+                    I am looking for an internship where I can test my competence and transition into working life in the last semester of my studies.
+                </p>
+            </div>
+        </section>
 
         <section class="my-cv">
             <div id="resume-intro">
                 <h2>Resume</h2>
-           <div class="info-cv"> 
-            <p>
-                <p>If you find this interesting and want to know more about me, click the button and download my resume for more details on my education and experience.</p>
-                <a href="images/Yonas_Ghebrenedhin_CV.pdf" download="Yonas_Ghebremedhin_CV.pdf" class="download-button">
-                    <li><img src="images/input_53876-25528.jpg" alt="Resum Image" class="resum-image"></li>
-                    Download My Resume
-                </a>
-            </p>
-        </div>
-            <h5>OR</h5>
-            <div class="info-contact">
-            <P> 
-                If you're interested in knowing more about me or for more information, please <a href="contact.html">Contact</a>
-                me by completing the contact form.
-            </P>
-        </div>
-        </div>
+                <div class="info-cv">
+                    <p>If you find this interesting and want to know more about me, click the button and download my resume for more details on my education and experience.</p>
+                    <a href="images/Yonas_Ghebrenedhin_CV.pdf" download="Yonas_Ghebremedhin_CV.pdf" class="download-button">
+                        <img src="images/input_53876-25528.jpg" alt="Resume Image" class="resume-image">
+                        Download My Resume
+                    </a>
+                </div>
+                <h5>OR</h5>
+                <div class="info-contact">
+                    <p>If you're interested in knowing more about me or for more information, please <a href="contact.html">Contact</a> me by completing the contact form.</p>
+                </div>
+            </div>
         </section>
     </main>
+
     <footer>
         <div class="social-media">
             <h2>Contact Me</h2>
@@ -150,7 +147,7 @@
             <a href="mailto:yonas.ghebremedhin@gmail.com" target="_blank"> 
                 <img src="images/gratis-png-logo-de-la-aplicacion-de-mensajes-correo-electronico-del-iphone-iconos-de-computadora-correo-electronico-thumbnail.png" alt=""> 
             </a>
-            <a href="tel: 073-587 18 54" target="_blank">
+            <a href="tel:+46735871854" target="_blank">
                 <img src="images/4367049.png" alt="">
             </a>
         </div>

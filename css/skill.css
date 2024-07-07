@@ -178,7 +178,7 @@ footer .social-media img {
 
     header nav ul {
         flex-direction: column;
-        align-items: center;
+        align-items: end;
     }
 
     header nav ul li {
@@ -213,5 +213,136 @@ footer .social-media img {
 
     footer .social-media {
         padding-bottom: 1rem;
+    }
+}
+
+
+.nav-links a {
+    color: #f4f4f4;
+}
+
+.language-button,
+.dark-mode-toggle label {
+    color: #fff;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode .nav-links a {
+    color: #ffffff;
+}
+
+body.dark-mode .language-button,
+body.dark-mode .dark-mode-toggle label {
+    color: #ffffff;
+}
+
+.dark-mode-toggle {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.dark-mode-toggle input[type="checkbox"] {
+    display: none;
+}
+
+.dark-mode-toggle label {
+    cursor: pointer;
+}
+
+.dark-mode-toggle label:before {
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 5px;
+    position: relative;
+    transition: background-color 0.3s;
+}
+
+.dark-mode-toggle input[type="checkbox"]:checked + label:before {
+    background-color: #667;
+}
+
+.dark-mode-toggle label:after {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: #123;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.3s;
+}
+
+.dark-mode-toggle input[type="checkbox"]:checked + label:after {
+    transform: translateX(20px);
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    right: 2rem;
+    background-color: #123;
+}
+
+.hamburger .line {
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #123;
+    padding: 10px;
+    
+}
+
+#logo {
+    height: 40px;
+    margin-right: 15rem;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+        align-items: end;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: end;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: end;
+    
+    }
+
+    .nav-links li a {
+        display: block;
+        text-align: end;
+        margin-right: 3rem;
+    }
+
+    .nav-links.active {
+        display: flex;
+    
     }
 }

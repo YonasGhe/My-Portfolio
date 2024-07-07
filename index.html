@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Yonas Ghebremedhin portfilio">
-    <meta property="og:description" content="web developer portfilio project building web designing">
+    <meta property="og:title" content="Yonas Ghebremedhin portfolio">
+    <meta property="og:description" content="web developer portfolio project building web designing">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://yonasghe.github.io/My-Portfolio/">
     <title>My-portfolio.se</title>
@@ -18,6 +18,11 @@
             <a href="index.html">
                 <img src="images/4.png" alt="Logo" id="logo">
             </a>
+            <button class="hamburger" aria-label="Toggle navigation menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </button>
             <ul class="nav-links">
                 <li><a href="index.html#introduction">About Me</a></li>
                 <li><a href="projects.html">Projects</a></li>
@@ -25,78 +30,81 @@
                 <li><a href="resume.html">Resume</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
+           
         </nav>
-    </header> 
+    </header>
 
-    <main> 
+    <main>
         <div class="about">
-        <section id="introduction" class="lazy-load">
-            <div class="intro-content">
-                <div class="intro-text">
-                    <h1>ABOUT ME</h1>
-                    <div>
-                    <h2>I AM . . .<br>
-                        <span id="rotating-text">Yonas Ghebremedhin</span>
-                    </div> 
-                    <h3>As a person, I am driven, motivated and communicative. I'm also determined, reliable, and creative individual who is always ready to take on new challenges. I am a student with a passion and talented web developer. Personaly, I'm a dedicated student who spends countless hours learning and practicing, always striving to improve my craft. As a web developer, I have worked on several projects, both personal and professional, where I am honing my skills and gaining knowledge about the latest web development tools and technologies. I have designed and developed websites for local businesses, non-profit organizations, and personal blogs. My work is characterized by its aesthetic appeal and ease of use, making it easy for users to navigate and access the information they need.</h3>
-                    <a href="#categories" class="link-button">Explore My Work</a>
+            <section id="introduction" class="lazy-load">
+                <div class="intro-content">
+                    <div class="intro-text">
+                        <h1 data-translate="about-me">ABOUT ME</h1>
+                        <div>
+                            <h2>I AM . . .<br>
+                                <span id="rotating-text">Yonas Ghebremedhin</span>
+                            </h2>
+                        </div>
+                        <h3 data-translate="about-description">As a person, I am driven, motivated and communicative. I'm also determined, reliable, and creative individual who is always ready to take on new challenges. I am a student with a passion and talented web developer. Personaly, I'm a dedicated student who spends countless hours learning and practicing, always striving to improve my craft. As a web developer, I have worked on several projects, both personal and professional, where I am honing my skills and gaining knowledge about the latest web development tools and technologies. I have designed and developed websites for local businesses, non-profit organizations, and personal blogs. My work is characterized by its aesthetic appeal and ease of use, making it easy for users to navigate and access the information they need.</h3>
+                        <a href="#categories" class="link-button" data-translate="explore-my-work">Explore My Work</a>
+                    </div>
+                    <div class="intro-image">
+                        <img src="images/449197583_513827517878720_4116139569957204352_n.jpg" alt="My Picture">
+                    </div>
                 </div>
-                <div class="intro-image">
-                    <img src="images/449197583_513827517878720_4116139569957204352_n.jpg" alt="My Picture">
-                </div>
-            </div>
-            </section> 
+            </section>
         </div>
-        
-        <div id="categories" class="categories"> 
-                <section class="highlights">
-                    <h2>Explore My Work</h2>
-                    <div id="highlights">
+
+        <div id="categories" class="categories">
+            <section class="highlights">
+                <h2 data-translate="explore-my-work">Explore My Work</h2>
+                <div id="highlights">
                     <div class="highlight-box">
                         <img src="images/438125028_428145756780443_243458293361335990_n.jpg" alt="">
-                        <h3><a href="projects.html">Projects</a></h3>
-                        <p>Take a look at some of the projects I've worked on during my studies.</p>
+                        <h3><a href="projects.html" data-translate="projects">Projects</a></h3>
+                        <p data-translate="projects-description">Take a look at some of the projects I've worked on during my studies.</p>
                         <div class="links">
-                            <h3><a href="projects.html">Read more</a></h3>
+                            <h3><a href="projects.html" data-translate="read-more">Read more</a></h3>
                         </div>
                     </div>
                     <div class="highlight-box">
                         <img src="images/1698229487528.jpg" alt="">
-                        <h3><a href="skills.html">Skills</a></h3>
-                        <p>Discover the skills I have acquired in web development and design.</p>
+                        <h3><a href="skills.html" data-translate="skills">Skills</a></h3>
+                        <p data-translate="skills-description">Discover the skills I have acquired in web development and design.</p>
                         <div class="links">
-                            <h3><a href="skills.html">Read more</a></h3>
+                            <h3><a href="skills.html" data-translate="read-more">Read more</a></h3>
                         </div>
                     </div>
                     <div class="highlight-box">
                         <img src="images/initial-letter-cv-logotype.webp" alt="">
-                        <h3><a href="resume.html">Resume</a></h3>
-                        <p>View and download my resume for more details on my education and experience.</p>
+                        <h3><a href="resume.html" data-translate="resume">Resume</a></h3>
+                        <p data-translate="resume-description">View and download my resume for more details on my education and experience.</p>
                         <div class="links">
-                            <h3><a href="resume.html">Read more</a></h3>
+                            <h3><a href="resume.html" data-translate="read-more">Read more</a></h3>
                         </div>
                     </div>
                 </div>
-                </section>
-            </div>
-        </main>
-            
-            <footer>
-                <div class="social-media">
-                    <h2>Contact Me</h2>
-                    <a href="https://github.com/YonasGhe" target="_blank">
-                        <img src="images/github-icon-logo-E5FF767098-seeklogo.com.png" alt="">
-                    </a>
-                    <a href="https://www.linkedin.com/in/yonas-ghebremedhin-8bb353181/" target="_blank">
-                        <img src="images/linkedin.png" alt="">
-                    </a>
-                    <a href="mailto:yonas.ghebremedhin@gmail.com" target="_blank"> 
-                        <img src="images/gratis-png-logo-de-la-aplicacion-de-mensajes-correo-electronico-del-iphone-iconos-de-computadora-correo-electronico-thumbnail.png" alt=""> 
-                    </a>
-                    <a href="tel: 073-587 18 54" target="_blank">
-                        <img src="images/4367049.png" alt="">
-                    </a>
-                </div>
-                <p>&copy; Developed by Yonas </p>
-            </footer>
-            
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="social-media">
+            <h2 data-translate="contact-me">Contact Me</h2>
+            <a href="https://github.com/YonasGhe" target="_blank">
+                <img src="images/github-icon-logo-E5FF767098-seeklogo.com.png" alt="">
+            </a>
+            <a href="https://www.linkedin.com/in/yonas-ghebremedhin-8bb353181/" target="_blank">
+                <img src="images/linkedin.png" alt="">
+            </a>
+            <a href="mailto:yonas.ghebremedhin@gmail.com" target="_blank">
+                <img src="images/gratis-png-logo-de-la-aplicacion-de-mensajes-correo-electronico-del-iphone-iconos-de-computadora-correo-electronico-thumbnail.png" alt="">
+            </a>
+            <a href="tel: 073-587 18 54" target="_blank">
+                <img src="images/4367049.png" alt="">
+            </a>
+        </div>
+        <p data-translate="copyright">&copy; Developed by Yonas </p>
+    </footer>
+</body>
+</html>
