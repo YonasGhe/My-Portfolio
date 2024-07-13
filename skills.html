@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skills | Portfolio</title>
+    <title data-translate="skills-page-title">Skills | Portfolio</title>
     <link rel="shortcut icon" href="images/portfilio.png" type="image/x-icon">
     <link rel="stylesheet" href="css/skill.css">
-    <script src="js/script.js" defer></script>
+    <script src="js/skills.js" defer></script>
 </head>
 <body class="skills-page">
     <header>
@@ -20,27 +20,31 @@
                 <div class="line"></div>
             </button>
             <ul class="nav-links">
-                <li><a href="index.html#introduction">About Me</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html#introduction" data-translate="about-me">About Me</a></li>
+                <li><a href="projects.html" data-translate="projects">Projects</a></li>
+                <li><a href="skills.html" data-translate="skills">Skills</a></li>
+                <li><a href="contact.html" data-translate="contact">Contact</a></li>
+                <li><a href="resume.html" data-translate="resume">Resume</a></li>
             </ul>
+            <select id="language-selector">
+                <option value="en">EN</option>
+                <option value="sv">SV</option>
+            </select>
         </nav>
     </header>
     
     <main>
         <section id="skills">
-            <h1>My Skills</h1>
-            <h4>Throughout my studies and projects, I have acquired a diverse set of skills in web development. I am proficient in HTML, CSS/SASS, JavaScript, React, Node.js, Express.js, PHP, SQL, Wordpress/Woocommerce, Shopify, and various web development frameworks and bootstraps. I have honed my skills through various projects, both personal and professional. Here are some of the technical and soft skills that I excel in:</h4>
+            <h1 data-translate="my-skills">My Skills</h1>
+            <h4 data-translate="skills-description">Throughout my studies and projects, I have acquired a diverse set of skills in web development. I am proficient in HTML, CSS/SASS, JavaScript, React, Node.js, Express.js, PHP, SQL, Wordpress/Woocommerce, Shopify, and various web development frameworks and bootstraps. I have honed my skills through various projects, both personal and professional. Here are some of the technical and soft skills that I excel in:</h4>
             
             <div class="skills-category">
                 <div class="front-end">
-                    <h2>Front-end</h2>
+                    <h2 data-translate="front-end">Front-end</h2>
                     <img src="images/fullstackpic.jpg" alt="Front-end">
                 </div>
                 <div class="back-end">
-                    <h2>Back-end</h2>
+                    <h2 data-translate="back-end">Back-end</h2>
                     <img src="images/3143260_6c86_2.jpg" alt="Back-end">
                     <img src="images/448893761_2112524332460719_794551982589074979_n.jpg" alt="Back-end">
                 </div>
@@ -50,7 +54,7 @@
     
     <footer>
         <div class="social-media">
-            <h2>Contact Me</h2>
+            <h2 data-translate="contact-me">Contact Me</h2>
             <a href="https://github.com/YonasGhe" target="_blank">
                 <img src="images/github-icon-logo-E5FF767098-seeklogo.com.png" alt="GitHub">
             </a>
@@ -64,7 +68,7 @@
                 <img src="images/4367049.png" alt="Phone">
             </a>
         </div>
-        <p>&copy; Developed by Yonas</p>
+        <p>&copy; <span data-translate="developed-by">Developed by</span> Yonas</p>
     </footer>
 </body>
 </html>

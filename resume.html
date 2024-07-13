@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume | Portfolio</title>
+    <title data-translate="resume-page-title">Resume | Portfolio</title>
     <link rel="shortcut icon" href="images/portfilio.png" type="image/x-icon">
     <link rel="stylesheet" href="css/resume.css">
-    <script src="js/script.js" defer></script>
+    <script src="js/resume.js" defer></script>
 </head>
 <body class="resume-page">
     <header>
@@ -20,93 +20,97 @@
                 <div class="line"></div>
             </button>
             <ul class="nav-links">
-                <li><a href="index.html#introduction">About Me</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html#introduction" data-translate="about-me">About Me</a></li>
+                <li><a href="projects.html" data-translate="projects">Projects</a></li>
+                <li><a href="skills.html" data-translate="skills">Skills</a></li>
+                <li><a href="contact.html" data-translate="contact">Contact</a></li>
+                <li><a href="resume.html" data-translate="resume">Resume</a></li>
             </ul>
+            <select id="language-selector">
+                <option value="en">EN</option>
+                <option value="sv">SV</option>
+            </select>
         </nav>
     </header>
 
     <main>
         <section id="my-cv">
             <div class="details">
-                <h2>About Me</h2>
+                <h2 data-translate="about-me">About Me</h2>
                 <div class="about">
-                    <h3>Name:</h3>
+                    <h3 data-translate="name">Name:</h3>
                     <p>Yonas Ghebremedhin</p>
-                    <h3>Email:</h3>
+                    <h3 data-translate="email">Email:</h3>
                     <p>yonas.ghebremedhin@gmail.com</p>
-                    <h3>Phone:</h3>
+                    <h3 data-translate="phone">Phone:</h3>
                     <p>+46 735 87 18 54</p>
-                    <h3>LinkedIn:</h3>
+                    <h3 data-translate="linkedin">LinkedIn:</h3>
                     <p><a href="https://www.linkedin.com/in/yonas-ghebremedhin-8bb353181/" target="_blank">Yonas G.</a></p>
                     <a href="images/Yonas_Ghebrenedhin_CV.pdf" target="_blank" id="cv-link">
-                       <h3> <img src="images/depositphotos_159098592-stock-illustration-download-pdf-file-icon.jpg" alt="CV"> CV </h3>
+                       <h3> <img src="images/depositphotos_159098592-stock-illustration-download-pdf-file-icon.jpg" alt="CV"> <span data-translate="cv">CV</span> </h3>
                     </a>
                 </div>
             </div>
         </section>
 
         <section class="my-cv">
-            <h2>Professional Summary</h2>
+            <h2 data-translate="professional-summary">Professional Summary</h2>
             <div class="experience">
-                <h3>Profession</h3>
-                <p>I am passionate about continuous learning and staying updated with the latest industry trends. Dedicated web developer with a strong foundation in both front-end and back-end technologies. Experienced in designing and developing websites and web applications, with a keen eye for detail and a commitment to delivering high-quality, user-friendly products.</p>
+                <h3 data-translate="profession">Profession</h3>
+                <p data-translate="profession-description">I am passionate about continuous learning and staying updated with the latest industry trends. Dedicated web developer with a strong foundation in both front-end and back-end technologies. Experienced in designing and developing websites and web applications, with a keen eye for detail and a commitment to delivering high-quality, user-friendly products.</p>
             </div>
         </section>
 
         <section class="my-cv">
-            <h2>Education</h2>
+            <h2 data-translate="education">Education</h2>
             <div class="education">
-                <h3>Diploma in Web Development, 2022 - ongoing</h3>
-                <h4>Gritacademy Yrkehögskola, Malmö</h4>
+                <h3 data-translate="diploma">Diploma in Web Development, 2022 - ongoing</h3>
+                <h4 data-translate="gritacademy">Gritacademy Yrkehögskola, Malmö</h4>
                 <ul>
-                    <li>Focused on training web developers for the e-commerce industry.</li>
-                    <li>Completed courses in HTML/CSS, UX/UI, Frontend JavaScript1 and 2, Database management, PHP and MySQL, Agile project management, Wordpress/woocommerce, Entrepreneurship and the consulting role, Digital business and marketing, and final exam work.</li>
-                    <li>Participated in a 2-year-long education with a 20-week LIA internship program.</li>
+                    <li data-translate="education-point1">Focused on training web developers for the e-commerce industry.</li>
+                    <li data-translate="education-point2">Completed courses in HTML/CSS, UX/UI, Frontend JavaScript1 and 2, Database management, PHP and MySQL, Agile project management, Wordpress/woocommerce, Entrepreneurship and the consulting role, Digital business and marketing, and final exam work.</li>
+                    <li data-translate="education-point3">Participated in a 2-year-long education with a 20-week LIA internship program.</li>
                 </ul>
             </div>
         </section>
 
         <section class="my-cv">
-            <h2>Teamwork Experience</h2>
+            <h2 data-translate="teamwork-experience">Teamwork Experience</h2>
             <div class="experience-item">
-                <h3>Teamwork Projects</h3>
-                <h4>Various Group Works</h4>
+                <h3 data-translate="teamwork-projects">Teamwork Projects</h3>
+                <h4 data-translate="various-group-works">Various Group Works</h4>
                 <ul>
-                    <li>I enjoy collaborating with others and believe in the power of teamwork to create impactful projects.</li>
-                    <li>Developed and maintained web applications using web development frameworks, bootstrap, and other tools.</li>
-                    <li>Collaborated with designers and back-end developers to create a seamless user experience.</li>
-                    <li>Implemented responsive design principles to ensure compatibility across various devices.</li>
+                    <li data-translate="teamwork-point1">I enjoy collaborating with others and believe in the power of teamwork to create impactful projects.</li>
+                    <li data-translate="teamwork-point2">Developed and maintained web applications using web development frameworks, bootstrap, and other tools.</li>
+                    <li data-translate="teamwork-point3">Collaborated with designers and back-end developers to create a seamless user experience.</li>
+                    <li data-translate="teamwork-point4">Implemented responsive design principles to ensure compatibility across various devices.</li>
                 </ul>
             </div>
         </section>
 
         <section class="my-cv">
-            <h2>Skills</h2>
+            <h2 data-translate="skills">Skills</h2>
             <div class="competences">
-                <h3>My Competences</h3>
+                <h3 data-translate="my-competences">My Competences</h3>
                 <ul>
-                    <li>HTML, CSS, JavaScript, React.js</li>
-                    <li>Node.js, Express.js</li>
-                    <li>Bootstrap, Libraries and Frameworks</li>
-                    <li>UX/UI</li>
-                    <li>PHP, MySQL and Databases</li>
-                    <li>Wordpress/Woocommerce and Shopify</li>
-                    <li>Git & GitHub</li>
-                    <li>Web Performance Optimization, Responsive Design</li>
-                    <li>Cross-Browser Compatibility, Problem-Solving and Debugging</li>
+                    <li data-translate="html-css-js">HTML, CSS, JavaScript, React.js</li>
+                    <li data-translate="node-express">Node.js, Express.js</li>
+                    <li data-translate="bootstrap">Bootstrap, Libraries and Frameworks</li>
+                    <li data-translate="ux-ui">UX/UI</li>
+                    <li data-translate="php-mysql">PHP, MySQL and Databases</li>
+                    <li data-translate="wordpress-shopify">Wordpress/Woocommerce and Shopify</li>
+                    <li data-translate="git-github">Git & GitHub</li>
+                    <li data-translate="web-performance">Web Performance Optimization, Responsive Design</li>
+                    <li data-translate="cross-browser">Cross-Browser Compatibility, Problem-Solving and Debugging</li>
                 </ul>
             </div>
         </section>
 
         <section class="my-cv">
-            <h2>Personal Letter</h2>
+            <h2 data-translate="personal-letter">Personal Letter</h2>
             <div class="brev">
-                <h3>Internship</h3>
-                <p>I am studying programming in web development right now. The education is extended to 2 years at Gritacademy Yrkehögskola in Malmö.
+                <h3 data-translate="internship">Internship</h3>
+                <p data-translate="internship-description">I am studying programming in web development right now. The education is extended to 2 years at Gritacademy Yrkehögskola in Malmö.
                     Training is aimed at web developers in the e-commerce industry who have a 20-week LIA internship with companies that I am looking for right now. I studied and practice designing websites using the programming languages HTML, CSS, JavaScript React, Node.js, Express.js, PHP, MySQL databases, and Wordpress/Woocommerce, among other soft skills. 
                     I invest in studying web development and concentrate on creating websites while learning about design e-commerce platforms with HTML/CSS, frontend JavaScript, UX, data management, entrepreneurship and consulting services, digital business and marketing, Agile project management, and more. I will have 20 weeks of training after the course ends. I will be able to work as a web developer in these roles after completing my studies: <br>
                     .Web Developer in E-commerce <br>
@@ -119,17 +123,17 @@
 
         <section class="my-cv">
             <div id="resume-intro">
-                <h2>Resume</h2>
+                <h2 data-translate="resume">Resume</h2>
                 <div class="info-cv">
-                    <p>If you find this interesting and want to know more about me, click the button and download my resume for more details on my education and experience.</p>
+                    <p data-translate="resume-description">If you find this interesting and want to know more about me, click the button and download my resume for more details on my education and experience.</p>
                     <a href="images/Yonas_Ghebrenedhin_CV.pdf" download="Yonas_Ghebremedhin_CV.pdf" class="download-button">
                         <img src="images/input_53876-25528.jpg" alt="Resume Image" class="resume-image">
-                        Download My Resume
+                        <span data-translate="download-resume">Download My Resume</span>
                     </a>
                 </div>
-                <h5>OR</h5>
+                <h5 data-translate="or">OR</h5>
                 <div class="info-contact">
-                    <p>If you're interested in knowing more about me or for more information, please <a href="contact.html">Contact</a> me by completing the contact form.</p>
+                    <p data-translate="contact-me-description">If you're interested in knowing more about me or for more information, please <a href="contact.html">Contact</a> me by completing the contact form.</p>
                 </div>
             </div>
         </section>
@@ -137,21 +141,21 @@
 
     <footer>
         <div class="social-media">
-            <h2>Contact Me</h2>
+            <h2 data-translate="contact-me">Contact Me</h2>
             <a href="https://github.com/YonasGhe" target="_blank">
-                <img src="images/github-icon-logo-E5FF767098-seeklogo.com.png" alt="">
+                <img src="images/github-icon-logo-E5FF767098-seeklogo.com.png" alt="GitHub">
             </a>
             <a href="https://www.linkedin.com/in/yonas-ghebremedhin-8bb353181/" target="_blank">
-                <img src="images/linkedin.png" alt="">
+                <img src="images/linkedin.png" alt="LinkedIn">
             </a>
             <a href="mailto:yonas.ghebremedhin@gmail.com" target="_blank"> 
-                <img src="images/gratis-png-logo-de-la-aplicacion-de-mensajes-correo-electronico-del-iphone-iconos-de-computadora-correo-electronico-thumbnail.png" alt=""> 
+                <img src="images/gratis-png-logo-de-la-aplicacion-de-mensajes-correo-electronico-del-iphone-iconos-de-computadora-correo-electronico-thumbnail.png" alt="Email"> 
             </a>
             <a href="tel:+46735871854" target="_blank">
-                <img src="images/4367049.png" alt="">
+                <img src="images/4367049.png" alt="Phone">
             </a>
         </div>
-        <p>&copy; Developed by Yonas</p>
+        <p>&copy; <span data-translate="developed-by">Developed by</span> Yonas</p>
     </footer>
 </body>
 </html>

@@ -17,6 +17,7 @@ header {
     background-color: #123;
     color: #fff;
     padding: 20px 0;
+    font-size: large;
 }
 
 header nav {
@@ -68,13 +69,14 @@ main {
 
 section {
     background-color: #c3a8a8;
-    margin: 0%;
-    padding-top: 30px;
-    border-radius: 75px;
+    margin: 2rem;
+    padding-top: 20px;
+    border-radius: 50px;
+    height: 75%;
 }
 
 section #my-cv {
-    padding-top: 0px;
+    padding-top: 10px;
 }
 
  h1{
@@ -90,13 +92,13 @@ section #my-cv {
           padding: 10px;
           color: blue;
           display: block;
-          width: auto;
+          width: 30%;
           background-color: #789;
           border-radius: 50px;
     }
   
     #my-cv .about{
-      width: 55%;
+      width: 58%;
       display: flex;
       flex-wrap: wrap;
       align-items: center;
@@ -106,7 +108,7 @@ section #my-cv {
     } 
    
     .about img {
-        width: 45%;
+        width: 50%;
         border-radius: 5px;
         
     }
@@ -130,7 +132,7 @@ section #my-cv {
     }
     
     h3{
-      align-items: center;
+      align-items: start;
       color: darkblue;
       display: block;
       margin: 10px;
@@ -210,8 +212,8 @@ section #my-cv {
       padding: 0%;
     }
 
-    .compotences {
-      width: 45%;
+    .competences {
+      width: 35%;
       display: flex;
       flex-wrap: wrap;
       align-items: center;
@@ -221,7 +223,7 @@ section #my-cv {
 
     .competences ul, li {
         width: auto;
-        margin-left: 2rem;
+        margin-left: 10px;
     }
     
     .brev{
@@ -402,6 +404,10 @@ footer .social-media img {
         width: auto;
         margin: 10px;
     }
+
+    .my-cv h2 {
+        width: auto;
+    }
 }
 
 .nav-links a {
@@ -462,7 +468,7 @@ body.dark-mode .dark-mode-toggle label {
     width: 16px;
     height: 16px;
     background-color: #fff;
-    border-radius: 50%;
+    border-radius: 45%;
     position: absolute;
     top: 2px;
     left: 2px;

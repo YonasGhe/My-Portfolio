@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Portfolio</title>
+    <title data-translate="contact-page-title">Contact | Portfolio</title>
     <link rel="shortcut icon" href="images/portfilio.png" type="image/x-icon">
     <link rel="stylesheet" href="css/contact.css">
-    <script src="js/script.js" defer></script>
+    <script src="js/contact.js" defer></script>
 </head>
 <body class="contact-page">
     <header>
@@ -20,49 +20,55 @@
                 <div class="line"></div>
             </button>
             <ul class="nav-links">
-                <li><a href="index.html#introduction">About Me</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html#introduction" data-translate="about-me">About Me</a></li>
+                <li><a href="projects.html" data-translate="projects">Projects</a></li>
+                <li><a href="skills.html" data-translate="skills">Skills</a></li>
+                <li><a href="contact.html" data-translate="contact">Contact</a></li>
+                <li><a href="resume.html" data-translate="resume">Resume</a></li>
             </ul>
+            <select id="language-selector">
+                <option value="en">EN</option>
+                <option value="sv">SV</option>
+            </select>
         </nav>
     </header> 
 
     <div class="contact">
         <section id="contact-info">
-            <h1>Contact Me</h1>
-            <h4> 
+            <h1 data-translate="contact-me">Contact Me</h1>
+            <h4 data-translate="contact-intro"> 
                 <i>If you have any questions, feel free to reach out to me using the contact form below or through my social media profiles.</i> 
             </h4>
             <div class="contact-details">
-                <h3>Email: <a href="mailto:yonas.ghebremedhin@gmail.com">yonas.ghebremedhin@gmail.com</a></h3>
-                <h3>Phone: <a href="tel:+46735871854">+46 735 87 18 54</a></h3>
-                <h3>Location: Lund, Sweden</h3>
+                <h3><span data-translate="email">Email:</span> <a href="mailto:yonas.ghebremedhin@gmail.com" data-translate="email-address">yonas.ghebremedhin@gmail.com</a></h3>
+                <h3><span data-translate="phone">Phone:</span> <a href="tel:+46735871854" data-translate="phone-number">+46 735 87 18 54</a></h3>
+                <h3 data-translate="location">Location: Lund, Sweden</h3>
             </div>
+                        
+            
         </section>
 
         <section id="contact-form">
-            <h2>Contact Form</h2>
+            <h2 data-translate="contact-form-title">Contact Form</h2>
             <form action="submit_form.php" method="post">
-                <label for="name">Full Name:</label>
+                <label for="name" data-translate="full-name">Full Name:</label>
                 <input type="text" id="name" name="name" placeholder="Jonas Gustavsson" required>
                 
-                <label for="email">Email:</label>
+                <label for="email" data-translate="email-label">Email:</label>
                 <input type="email" id="email" name="email" placeholder="user@hello.com" required>
 
-                <label for="subject">Subject:</label>
-                <input type="text" id="subject" name="subject" placeholder="issue" required>
+                <label for="subject" data-translate="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" placeholder="Issue" required>
                 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" placeholder="comments" required></textarea>
+                <label for="message" data-translate="message">Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Comments" required></textarea>
                 
-                <button type="submit">Send Message</button>
+                <button type="submit" data-translate="send-message">Send Message</button>
             </form>
         </section>
 
         <section id="social-media">
-            <h2>Follow Me</h2>
+            <h2 data-translate="follow-me">Follow Me</h2>
             <div class="social-media-links">
                 <a href="https://github.com/YonasGhe" target="_blank">
                     <img src="images/github-icon-logo-E5FF767098-seeklogo.com.png" alt="GitHub">
@@ -76,7 +82,7 @@
     
     <footer>
         <div class="social-media">
-            <h2>Contact Me</h2>
+            <h2 data-translate="contact-me">Contact Me</h2>
             <a href="https://github.com/YonasGhe" target="_blank">
                 <img src="images/github-icon-logo-E5FF767098-seeklogo.com.png" alt="">
             </a>
@@ -90,7 +96,7 @@
                 <img src="images/4367049.png" alt="">
             </a>
         </div>
-        <p>&copy; Developed by Yonas </p>
+        <p>&copy; <span data-translate="developed-by">Developed by</span> Yonas </p>
     </footer>
 </body>
 </html>

@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects | Portfolio</title>
+    <title data-translate="projects-page-title">Projects | Portfolio</title>
     <link rel="shortcut icon" href="images/portfilio.png" type="image/x-icon">
     <link rel="stylesheet" href="css/project.css">
-    <script src="js/script.js" defer></script>
+    <script src="js/project.js" defer></script>
 </head>
 <body class="projects-page">
     <header>
@@ -20,75 +20,78 @@
                 <div class="line"></div>
             </button>
             <ul class="nav-links">
-                <li><a href="index.html#introduction">About Me</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html#introduction" data-translate="about-me">About Me</a></li>
+                <li><a href="projects.html" data-translate="projects">Projects</a></li>
+                <li><a href="skills.html" data-translate="skills">Skills</a></li>
+                <li><a href="contact.html" data-translate="contact">Contact</a></li>
+                <li><a href="resume.html" data-translate="resume">Resume</a></li>
             </ul>
+            <select id="language-selector">
+                <option value="en">EN</option>
+                <option value="sv">SV</option>
+            </select>
         </nav>
     </header>
     
     <main class="projects">
-        <h1>My Projects</h1>
-        <h4>I have designed and developed websites for local businesses, non-profit organizations, and personal blogs. My work is characterized by its aesthetic appeal and ease of use, making it easy for users to navigate and access the information they need. Here are some of the challenges I have worked for my projects, showcasing my skills in web development, database handling, and more other tools.</h4>
+        <h1 data-translate="projects-title">My Projects</h1>
+        <h4 data-translate="projects-description">I have designed and developed websites for local businesses, non-profit organizations, and personal blogs. My work is characterized by its aesthetic appeal and ease of use, making it easy for users to navigate and access the information they need. Here are some of the challenges I have worked for my projects, showcasing my skills in web development, database handling, and more other tools.</h4>
         
         <section id="projects">
             <div class="project">
                 <img src="images/438125088_1148568616485778_8184290759432417328_n.jpg" alt="Weather App Screenshot">
-                <h2>Weather App</h2>
-                <p>A web application that provides real-time weather information based on the user's location. Built using JavaScript, HTML, and CSS, with data fetched from an external API.</p>
+                <h2 data-translate="weather-app-title">Weather App</h2>
+                <p data-translate="weather-app-description">A web application that provides real-time weather information based on the user's location. Built using JavaScript, HTML, and CSS, with data fetched from an external API.</p>
                 <div class="contact">
                     <a href="https://github.com/YonasGhe/webb23-js1-slutprojekt-Yonas-Ghebremedhin.git" target="_blank">
-                        <img src="images/Github-desktop-logo-symbol.svg.png" alt=""> GitHub
+                        <img src="images/Github-desktop-logo-symbol.svg.png" alt="">
                     </a>
-                    <a href="https://yonasghe.github.io/webb23-js1-slutprojekt-Yonas-Ghebremedhin/" target="_blank">Live Demo</a>
+                    <a href="https://yonasghe.github.io/webb23-js1-slutprojekt-Yonas-Ghebremedhin/" target="_blank" data-translate="live-demo">Live Demo</a>
                 </div>
             </div>
 
             <div class="project">
                 <img src="images/447775736_812939300503888_4779059176050833921_n.jpg" alt="Web Shop Screenshot">
-                <h2>Web Shop</h2>
-                <p>An e-commerce website built with a focus on responsive design and user experience. Implemented using React.js, Node.js, Express, and MongoDB, with features like product browsing, shopping cart, and user authentication.</p>
+                <h2 data-translate="web-shop-title">Web Shop</h2>
+                <p data-translate="web-shop-description">An e-commerce website built with a focus on responsive design and user experience. Implemented using React.js, Node.js, Express, and MongoDB, with features like product browsing, shopping cart, and user authentication.</p>
                 <div class="contact">
                     <a href="https://github.com/YonasGhe/webb23-js2-slutprojekt-yonas-ghebremedhin.git" target="_blank">
-                        <img src="images/Github-desktop-logo-symbol.svg.png" alt=""> GitHub
+                        <img src="images/Github-desktop-logo-symbol.svg.png" alt="">
                     </a>
-                    <a href="https://your-web-shop-demo-link.com" target="_blank">Live Demo</a>
                 </div>
             </div>
 
             <div class="project">
                 <img src="images/database.jpg" alt="Database Handling Screenshot">
-                <h2>Database Handling</h2>
-                <p>A project demonstrating various database handling techniques, including data modeling and optimization. Worked with MySQL databases to create efficient data management solutions using PHP code.</p>
+                <h2 data-translate="database-handling-title">Database Handling</h2>
+                <p data-translate="database-handling-description">A project demonstrating various database handling techniques, including data modeling and optimization. Worked with MySQL databases to create efficient data management solutions using PHP code.</p>
                 <div class="contact">
                     <a href="https://github.com/yourusername/database-handling" target="_blank">
-                        <img src="images/Github-desktop-logo-symbol.svg.png" alt=""> GitHub
+                        <img src="images/Github-desktop-logo-symbol.svg.png" alt="">
                     </a>
                 </div>
             </div>
 
             <div class="project">
                 <img src="images/438125151_4550792788478268_5430753094236116949_n.jpg" alt="WordPress Projects Screenshot">
-                <h2>WordPress Projects</h2>
-                <p>Developed and customized with its own theme using PHP, Sass, and Vitejs for WordPress/Woocommerce sites to the final project work, enhancing their functionality and design.</p>
+                <h2 data-translate="wordpress-projects-title">WordPress Projects</h2>
+                <p data-translate="wordpress-projects-description">Developed and customized with its own theme using PHP, Sass, and Vitejs for WordPress/Woocommerce sites to the final project work, enhancing their functionality and design.</p>
                 <div class="contact">
                     <a href="https://github.com/YonasGhe/Examensarbete-Slutprojekt.git" target="_blank">
-                        <img src="images/Github-desktop-logo-symbol.svg.png" alt=""> GitHub
+                        <img src="images/Github-desktop-logo-symbol.svg.png" alt="">
                     </a>
                 </div>
             </div>
 
             <div class="project">
                 <img src="images/438124974_1169186730755918_2160100185897908221_n.jpg" alt="Rock, Paper, Scissors Screenshot">
-                <h2>Rock, Paper, Scissors</h2>
-                <p>A web-based game where you can play the classic game of Rock, Paper, Scissors against a computer opponent, to determine the winner based on user and computer choices for the first 3 scores. The game is built using HTML, CSS, and JavaScript.</p>
+                <h2 data-translate="rock-paper-scissors-title">Rock, Paper, Scissors</h2>
+                <p data-translate="rock-paper-scissors-description">A web-based game where you can play the classic game of Rock, Paper, Scissors against a computer opponent, to determine the winner based on user and computer choices for the first 3 scores. The game is built using HTML, CSS, and JavaScript.</p>
                 <div class="contact">
                     <a href="https://github.com/YonasGhe/webb23-js2-inlamning1-yonas-ghebremedhin.git" target="_blank">
-                        <img src="images/Github-desktop-logo-symbol.svg.png" alt=""> GitHub
+                        <img src="images/Github-desktop-logo-symbol.svg.png" alt="">
                     </a>
-                    <a href="https://yonasghe.github.io/webb23-js1-mp2-yonas-ghebremedhin/" target="_blank">Live Demo</a>
+                    <a href="https://yonasghe.github.io/webb23-js1-mp2-yonas-ghebremedhin/" target="_blank" data-translate="live-demo">Live Demo</a>
                 </div>
             </div>
         </section>
@@ -96,7 +99,7 @@
 
     <footer>
         <div class="social-media">
-            <h2>Contact Me</h2>
+            <h2 data-translate="contact-me">Contact Me</h2>
             <a href="https://github.com/YonasGhe" target="_blank">
                 <img src="images/github-icon-logo-E5FF767098-seeklogo.com.png" alt="">
             </a>
@@ -110,7 +113,7 @@
                 <img src="images/4367049.png" alt="">
             </a>
         </div>
-        <p>&copy; Developed by Yonas </p>
+        <p data-translate="copyright">&copy; Developed by Yonas </p>
     </footer>
 </body>
 </html>
