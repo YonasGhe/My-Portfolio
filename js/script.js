@@ -21,8 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// script.js
-
     const translations = {
         en: {
             "about-me": "About Me",
@@ -42,6 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "resume-description": "View and download my resume for more details on my education and experience.",
             "contact-me": "Contact Me",
             "read-more": "Read more",
+            "rotating-texts": ["Yonas Ghebremedhin", "A Web Developer", "A System Developer", "A Web Designer", "A Programmer", "A Creator"],
             "copyright": "&copy; Developed by Yonas"
         },
 
@@ -54,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "contact": "Kontakt",
             "about-me": "OM MIG",
             "I AM . . .": "JAG ÄR . . .",
-            "about-description": "Jag är en student med passion och talang för webbutveckling. Som person är jag driven, motiverad och kommunikativ. Jag är också bestämd, pålitlig och kreativ individ som alltid är redo att ta sig an nya utmaningar. Personligen är jag en dedikerad student som spenderar otaliga timmar på att lära mig och öva, alltid strävar efter att förbättra mitt hantverk. Som webbutvecklare har jag arbetat med flera projekt, både personliga och professionella, där jag slipar mina färdigheter och får kunskap om de senaste verktygen och teknologierna för webbutveckling. Jag har designat och utvecklat webbplatser för lokala företag, ideella organisationer och personliga bloggar. Mitt arbete kännetecknas av sin estetiska tilltalande och användarvänlighet, vilket gör det enkelt för användare att navigera och få tillgång till den information de behöver.",
+            "about-description": "Jag är en student med passion och talang för webbutveckling. Som person är jag driven, motiverad och kommunikativ. Jag är också bestämd, pålitlig och kreativ individ som alltid är redo att ta sig en nya utmaningar. Personligen är jag en dedikerad student som spenderar otaliga timmar på att lära mig och öva, alltid strävar efter att förbättra mitt hantverk. Som webbutvecklare har jag arbetat med flera projekt, både personliga och professionella, där jag slipar mina färdigheter och får kunskap om de senaste verktygen och teknologierna för webbutveckling. Jag har designat och utvecklat webbplatser för lokala företag, ideella organisationer och personliga bloggar. Mitt arbete kännetecknas av sin estetiska tilltalande och användarvänlighet, vilket gör det enkelt för användare att navigera och få tillgång till den information de behöver.",
             "explore-my-work": "Utforska mitt arbete",
             "projects": "Projekter",
             "projects-description": "Ta en titt på några av de projekt jag har arbetat med under mina studier.",
@@ -63,6 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "resume-description": "Visa och ladda ner mitt CV för mer information om min utbildning och erfarenhet.",
             "contact-me": "Kontakta mig",
             "read-more": "Läs mer",
+            "rotating-texts": ["Yonas Ghebremedhin", "En Webbutvecklare", "En Systemutvecklare", "En Webbdesigner", "En Programmerare", "En Skapare"],
             "copyright": "&copy; Utvecklad av Yonas"
         }
     };

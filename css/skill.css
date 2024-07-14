@@ -346,3 +346,42 @@ nav {
     
     }
 }
+
+.soft-skills {
+    width: 90%;
+    margin: 10px auto;
+}
+
+.soft-skills h2 {
+    text-align: center;
+    margin: 3rem;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    margin: 15px;
+}
+
+.skill-name {
+    width: 150px; /* Adjust based on your layout */
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.skill-bar {
+    flex-grow: 1;
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    height: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.skill-percentage {
+    background-color: #4caf50;
+    height: 100%;
+    border-radius: 20px;
+}
