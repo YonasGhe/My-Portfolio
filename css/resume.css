@@ -221,7 +221,7 @@ section #my-cv {
     .skill {
         display: flex;
         align-items: center;
-        margin: 10px;
+        margin: 5px;
         width: 100%;
     }
     
@@ -388,6 +388,10 @@ footer .social-media img {
     height: 30px;
     border-radius: 3px;
 
+}
+
+footer .social-media img:hover {
+    background-color: rebeccapurple;
 }
 
 @media (max-width: 768px) {

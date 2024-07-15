@@ -171,6 +171,11 @@ footer .social-media img {
     
 }
 
+footer .social-media img:hover {
+    background-color: rebeccapurple;
+}
+
+
 @media (max-width: 768px) {
     header nav {
         flex-direction: column;
@@ -364,7 +369,7 @@ nav {
 }
 
 .skill-name {
-    width: 150px; /* Adjust based on your layout */
+    width: 150px; 
     font-size: 18px;
     margin-right: 10px;
 }

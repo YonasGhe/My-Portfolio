@@ -199,6 +199,11 @@ footer .social-media img {
 
 }
 
+footer .social-media img:hover {
+    background-color: rebeccapurple;
+}
+
+
 @media (max-width: 768px) {
     header nav {
         flex-direction: column;
