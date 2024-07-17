@@ -67,7 +67,8 @@ div p {
 }
 
 .projects-page h1, h4 {
-    padding: 20px;
+    padding: 15px;
+    margin: auto 2rem;
     text-align: center;
     color: whitesmoke;
 }
