@@ -420,16 +420,28 @@ footer .social-media img:hover {
     .about, .experience, .education, .experience-item, .competences, .brev {
         width: auto;
         max-height: 100%;
-        margin: 10px;
+        margin: 0;
     }
-
+   
     .about img {
         width: 50%;
     }
 
-    .details h2 {
-        width: auto;
-        margin: 10px;
+    .details h3 {
+        text-align: start;
+        margin-left: 0px;
+        padding-left: 0%;
+    }
+    .about p {
+        text-align: center;
+        padding: 0%;
+        margin: 0;
+    }
+
+    section .details {
+        width: 100%;
+        margin: 0%;
+        padding: 0%;
     }
 
     .my-cv h2 {
