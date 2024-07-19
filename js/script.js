@@ -88,7 +88,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-window.addEventListener('scroll', function () {
-    const scrolled = window.scrollY;
-    document.querySelector('.cover-image').style.backgroundPositionY = -(scrolled * 0.5) + 'px';
-});
+
