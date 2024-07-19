@@ -1,0 +1,11 @@
+
+images/*.jpg
+images/*.png
+
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tiff
+*.svg
