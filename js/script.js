@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const texts = ["A Web Developer", "A System developer", "A Web Designer", "A Programmer", "A Creator"];
+    const texts = ["Web Developer", "System developer", "Web Designer", "Programmer", "Creator"];
     let index = 0;
 
     function changeText() {
@@ -88,4 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-
+window.addEventListener('scroll', function () {
+    const scrolled = window.scrollY;
+    document.querySelector('.cover-image').style.backgroundPositionY = -(scrolled * 0.5) + 'px';
+});

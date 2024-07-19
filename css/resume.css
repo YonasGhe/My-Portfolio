@@ -424,7 +424,7 @@ footer .social-media img:hover {
     }
    
     .about img {
-        width: 50%;
+        width: 40%;
     }
 
     .details h3 {
@@ -433,7 +433,7 @@ footer .social-media img:hover {
         padding-left: 0%;
     }
     .about p {
-        text-align: center;
+        text-align: start;
         padding: 0%;
         margin: 0;
     }
