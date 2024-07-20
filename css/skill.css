@@ -353,9 +353,29 @@ nav {
     
 }
 
+@keyframes shake {
+    from, to {
+      transform: translate3d(0, 0, 0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+      transform: translate3d(-10px, 0, 0);
+    }
+    20%, 40%, 60%, 80% {
+      transform: translate3d(10px, 0, 0);
+    }
+  }
+  
+  .skill {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  }
+  
+  
 .soft-skills {
-    width: 90%;
-    margin: 10px auto;
+    background: url("../images/1698229487528.jpg") ;
+    width: 100%;
+    margin: auto;
+    border-radius: 10px;
+    
 }
 
 .soft-skills h2 {
@@ -396,3 +416,28 @@ nav {
     text-align: right;
     margin-right: 10px;
 }
+
+@media (max-width: 600px) {
+    .soft-skills {
+      width: 100%;
+      padding: 5px;
+      margin-left: auto; 
+    }
+  
+    .skill-bar {
+        height: 15px; 
+        width: 100%;
+        text-align: center;
+      
+    }
+  
+    .skill-name {
+        text-align: start;
+        margin-left: auto;
+        font-size: 1em; 
+    }
+  
+    h2 {
+      font-size: 1.2em; 
+    }
+  }
