@@ -67,7 +67,7 @@ const translations = {
         "rock-paper-scissors-title": "Sten, Sax, Påse",
         "rock-paper-scissors-description": "Ett webbaserat spel där du kan spela det klassiska spelet Sten, Sax, Påse mot en dator motståndare, för att bestämma vinnaren baserat på användarens och datorns val för de första 3 poängen. Spelet är byggt med HTML, CSS och JavaScript.",
         "live-demo": "Live Demo",
-        "copyright": "© Utvecklad av Yonas"
+        "copyright": "Utvecklad av Yonas"
     }
 };
 

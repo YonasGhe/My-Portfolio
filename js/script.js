@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "about-me": "ABOUT ME",
             "I AM": "I'M",
             "yonas": "Yonas Ghebremedhin",
-            "rotating-texts": ["En Webbutvecklare", "En Systemutvecklare", "En Webbdesigner", "En Programmerare", "En Skapare"],
+            "rotating-texts": ["A Web Developer", "A System Developer", "A Web Designer", "A Programmer", "A Creator"],
             "about-description": "I am a student with a passion and talented web developer. As a person, I am driven, motivated and communicative. I'm also determined, reliable, and creative individual who is always ready to take on new challenges. Personaly, I'm a dedicated student who spends countless hours learning and practicing, always striving to improve my craft. As a web developer, I have worked on several projects, both personal and professional, where I am honing my skills and gaining knowledge about the latest web development tools and technologies. I have designed and developed websites for local businesses, non-profit organizations, and personal blogs. My work is characterized by its aesthetic appeal and ease of use, making it easy for users to navigate and access the information they need.",
             "explore-my-work": "Explore My Work",
             "projects": "Projects",
@@ -53,9 +53,9 @@ document.addEventListener('DOMContentLoaded', () => {
             "resume": "CV",
             "contact": "Kontakt",
             "about-me": "Om mig",
-            "I AM": "JAG ÄR",
+            "I AM": "Jag Är Yonas Ghebremedhin",
             "yonas": "Yonas Ghebremedhin",
-            "rotating-texts": ["A Web Developer", "A System Developer", "A Web Designer", "A Programmer", "A Creator"],
+            "rotating-texts": ["En Webbutvecklare", "En Systemutvecklare", "En Webbdesigner", "En Programmerare", "En Skapare"],
             "about-description": "Jag är en student med passion och talang för webbutveckling. Som person är jag driven, motiverad och kommunikativ. Jag är också bestämd, pålitlig och kreativ individ som alltid är redo att ta sig en nya utmaningar. Personligen är jag en dedikerad student som spenderar otaliga timmar på att lära mig och öva, alltid strävar efter att förbättra mitt hantverk. Som webbutvecklare har jag arbetat med flera projekt, både personliga och professionella, där jag slipar mina färdigheter och får kunskap om de senaste verktygen och teknologierna för webbutveckling. Jag har designat och utvecklat webbplatser för lokala företag, ideella organisationer och personliga bloggar. Mitt arbete kännetecknas av sin estetiska tilltalande och användarvänlighet, vilket gör det enkelt för användare att navigera och få tillgång till den information de behöver.",
             "explore-my-work": "Utforska mitt arbete",
             "projects": "Projekter",
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "resume-description": "Visa och ladda ner mitt CV för mer information om min utbildning och erfarenhet.",
             "contact-me": "Kontakta mig",
             "read-more": "Läs mer",
-            "copyright": "&copy; Utvecklad av Yonas"
+            "copyright": "Utvecklad av Yonas"
         }
     };
 
