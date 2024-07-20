@@ -1,4 +1,5 @@
-
+images/
+.images
 *.jpg
 *.jpeg
 *.png
@@ -15,10 +16,3 @@ images/*.bmp
 images/*.tiff
 images/*.ico
 
-assets/images/*.jpg
-assets/images/*.jpeg
-assets/images/*.png
-assets/images/*.gif
-assets/images/*.bmp
-assets/images/*.tiff
-assets/images/*.ico
