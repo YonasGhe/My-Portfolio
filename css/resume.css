@@ -394,6 +394,12 @@ footer .social-media img:hover {
     background-color: rebeccapurple;
 }
 
+.copy {
+    text-align: right;
+    margin-right: 10px;
+}
+
+
 @media (max-width: 768px) {
     header nav {
         flex-direction: column;

@@ -60,7 +60,25 @@ header nav ul li a:hover {
     color: darksalmon;
 }
 
-
+@keyframes zoomOut {
+    from {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+    to {
+      opacity: 0;
+      transform: scale3d(0, 0, 0);
+    }
+  }
+  
+  .zoomOut {
+    animation: zoomOut 1s ease-in-out;
+  }
+  
+  
 .categories {
     width: 100%;
     padding: 0;
@@ -200,6 +218,21 @@ strong {
     padding: 3rem;
 }
 
+@keyframes rotateIn {
+    from {
+      transform: rotate3d(0, 0, 1, -200deg);
+      opacity: 0;
+    }
+    to {
+      transform: rotate3d(0, 0, 0, 0deg);
+      opacity: 1;
+    }
+  }
+  
+  .highlight-box {
+    animation: rotateIn 1s ease-in-out;
+  }
+  
 .highlight-box {
     background: url('../images/438137453_977663637389166_7041372685070404303_n.jpg');
     padding: 15px;
@@ -324,6 +357,15 @@ footer .social-media img {
 
 footer .social-media img:hover {
     background-color: rebeccapurple;
+}
+
+.copy {
+    text-align: right;
+    margin-right: 10px;
+}
+
+.copy span {
+    color: #fff;
 }
 
 

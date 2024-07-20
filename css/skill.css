@@ -391,3 +391,8 @@ nav {
     height: 100%;
     border-radius: 20px;
 }
+
+.copy {
+    text-align: right;
+    margin-right: 10px;
+}
