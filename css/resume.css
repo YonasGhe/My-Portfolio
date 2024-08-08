@@ -425,8 +425,8 @@ footer .social-media img:hover {
     }
 
     .my-cv {
-        border-radius: 50px;
-        margin: 10px;
+        border-radius: 10px;
+       
     }
     .about, .experience, .education, .experience-item, .competences, .brev {
         width: auto;

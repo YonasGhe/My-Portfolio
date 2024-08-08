@@ -92,18 +92,6 @@ h4 {
     border-radius: 10px;
 }
 
-@keyframes pulse {
-    0% { transform: scale(0.5); }
-    50% { transform: scale(1.1); }
-    100% { transform: scale(1); }
-  }
-  
-  .skills-category{
-    animation-name: pulse;
-    animation-duration: 5s;
-    animation-iteration-count: initial;
-    animation-timing-function: ease-in-out;
-  }
 
 .skills-category {
     display: flex;
