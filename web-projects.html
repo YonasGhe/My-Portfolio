@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Projects | Yonas Ghebremedhin</title>
+    <link rel="shortcut icon" href="images/portfilio.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/web-projects.css">
+    <script src="js/script.js" defer></script>
+    <script src="js/web-project.js" defer></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <a href="index.html">
+                <img src="images/4.png" alt="Logo" id="logo">
+            </a>
+            <button class="hamburger" aria-label="Toggle navigation menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html#about" data-i18n="aboutMe">About Me</a></li>
+                <li><a href="shopify-projects.html" data-i18n="shopify">Shopify</a></li>
+                <li><a href="wordpress-projects.html" data-i18n="wordpress">WordPress</a></li>
+                <li><a href="web-projects.html" data-i18n="webDevelopment">Web Development</a></li>
+                <li><a href="contact.html" data-i18n="contact">Contact</a></li>
+            </ul>
+            <select id="language-selector">
+                <option value="en">EN</option>
+                <option value="sv">SV</option>
+            </select>
+        </nav>
+    </header>
+
+    <!-- Hero Banner with Cover Image -->
+    <section class="page-hero" style="background-image: linear-gradient(rgba(102, 126, 234, 0.9), rgba(118, 75, 162, 0.9)), url('images/1698229487528.jpg');">
+        <div class="page-hero-content">
+            <i class="fas fa-code" style="font-size: 4rem; margin-bottom: 20px;"></i>
+            <h1 data-i18n="webProjectsTitle">Web Development</h1>
+            <p data-i18n="webProjectsSubtitle">Full-stack applications, APIs, and interactive experiences</p>
+            <a href="index.html#portfolio" class="btn btn-secondary">
+                <i class="fas fa-arrow-left"></i> <span data-i18n="backToPortfolio">Back to Portfolio</span>
+            </a>
+        </div>
+    </section>
+
+    <main>
+        <section class="projects-page-section">
+            <div class="container">
+                <!-- Web Development Projects Grid -->
+                <div class="projects-grid">
+                    <!-- E-Commerce Web Shop -->
+                    <div class="project-card">
+                        <img src="images/447775736_812939300503888_4779059176050833921_n.jpg" alt="Web Shop">
+                        <div class="project-info">
+                            <h3 data-i18n="webShopTitle">E-Commerce Web Shop</h3>
+                            <p class="project-type" data-i18n="fullStackType">Full-Stack Application</p>
+                            <p class="project-desc" data-i18n="webShopDesc">An e-commerce website built with a focus on responsive design and user experience. Implemented using React.js, Node.js, Express, and MongoDB.</p>
+                            <div class="project-tech-tags">
+                                <span class="tech-badge">React</span>
+                                <span class="tech-badge">Node.js</span>
+                                <span class="tech-badge">MongoDB</span>
+                                <span class="tech-badge">Express</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/YonasGhe/webb23-js2-slutprojekt-yonas-ghebremedhin.git" target="_blank" class="project-link">
+                                    <img src="images/Github-desktop-logo-symbol.svg.png" alt="GitHub" style="width: 20px; height: 20px; margin-right: 5px;">
+                                    <span data-i18n="viewCode">View Code</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Database Management -->
+                    <div class="project-card">
+                        <img src="images/database.jpg" alt="Database">
+                        <div class="project-info">
+                            <h3 data-i18n="databaseTitle">Database Management System</h3>
+                            <p class="project-type" data-i18n="backendType">Backend Development</p>
+                            <p class="project-desc" data-i18n="databaseDesc">A project demonstrating various database handling techniques, including data modeling and optimization. Worked with MySQL databases using PHP.</p>
+                            <div class="project-tech-tags">
+                                <span class="tech-badge">MySQL</span>
+                                <span class="tech-badge">PHP</span>
+                                <span class="tech-badge">Backend</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/YonasGhe/GritStore-Slutprojekt.git" target="_blank" class="project-link">
+                                    <img src="images/Github-desktop-logo-symbol.svg.png" alt="GitHub" style="width: 20px; height: 20px; margin-right: 5px;">
+                                    <span data-i18n="viewCode">View Code</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Weather App -->
+                    <div class="project-card">
+                        <img src="images/438125088_1148568616485778_8184290759432417328_n.jpg" alt="Weather App">
+                        <div class="project-info">
+                            <h3 data-i18n="weatherAppTitle">Weather App</h3>
+                            <p class="project-type" data-i18n="webAppType">Web Application</p>
+                            <p class="project-desc" data-i18n="weatherAppDesc">A web application that provides real-time weather information based on the user's location. Built using JavaScript, HTML, and CSS, with data fetched from an external API.</p>
+                            <div class="project-tech-tags">
+                                <span class="tech-badge">JavaScript</span>
+                                <span class="tech-badge">API</span>
+                                <span class="tech-badge">HTML/CSS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/YonasGhe/webb23-js1-slutprojekt-Yonas-Ghebremedhin.git" target="_blank" class="project-link">
+                                    <img src="images/Github-desktop-logo-symbol.svg.png" alt="GitHub" style="width: 20px; height: 20px; margin-right: 5px;">
+                                    <span data-i18n="viewCode">Code</span>
+                                </a>
+                                <a href="https://yonasghe.github.io/webb23-js1-slutprojekt-Yonas-Ghebremedhin/" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i> <span data-i18n="liveDemo">Live Demo</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-i18n="footerAboutTitle">About Me</h3>
+                    <p data-i18n="footerAboutText">Web developer and e-commerce specialist based in Sweden, helping businesses build high-converting online platforms.</p>
+                    <div class="social-links">
+                        <a href="https://github.com/YonasGhe" target="_blank" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/yonas-ghebremedhin-8bb353181/" target="_blank" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:yonas.ghebremedhin@gmail.com" class="social-link" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="tel:+46735871854" class="social-link" aria-label="Phone">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 data-i18n="quickLinksTitle">Quick Links</h3>
+                    <div class="quick-links">
+                        <a href="index.html#about"><i class="fas fa-chevron-right"></i> <span data-i18n="aboutMe">About Me</span></a>
+                        <a href="index.html#services"><i class="fas fa-chevron-right"></i> <span data-i18n="servicesTitle">Services</span></a>
+                        <a href="index.html#portfolio"><i class="fas fa-chevron-right"></i> <span data-i18n="portfolioTitle">Portfolio</span></a>
+                        <a href="contact.html"><i class="fas fa-chevron-right"></i> <span data-i18n="contact">Contact</span></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 data-i18n="contactInfoTitle">Contact Info</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:yonas.ghebremedhin@gmail.com">digital.dev@info.se</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+46798765432">+46 79-876 54 32</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Lund, Sweden</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footerRights">&copy; 2024 All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

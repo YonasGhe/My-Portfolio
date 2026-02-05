@@ -135,52 +135,7 @@ const translations = {
         // Project Actions
         viewCode: "View Code",
         liveDemo: "Live Demo",
-        playGame: "Play Game",
-
-        // WordPress Projects Page
-        wpProjectsTitle: "WordPress / WooCommerce",
-        wpProjectsSubtitle: "Custom themes and e-commerce solutions",
-
-        // WordPress Theme Project
-        wpThemeTitle: "Custom WordPress Theme",
-        wpThemeType: "WordPress / WooCommerce",
-        wpThemeDesc: "Developed and customized with its own theme using PHP, Sass, and Vite.js for WordPress/WooCommerce sites to the final project work, enhancing their functionality and design.",
-
-        // Coming Soon
-        comingSoonTitle: "More Projects Coming Soon",
-        comingSoonDesc: "I'm currently working on more WordPress and WooCommerce projects. Stay tuned!",
-
-        // Shopify Projects Page
-        shopifyProjectsTitle: "Shopify Stores",
-        shopifyProjectsSubtitle: "Professional e-commerce solutions built with Shopify",
-        shopifyStoreType: "Shopify E-Commerce Store",
-        ironRepublicDesc: "Complete fitness equipment store with 15+ products, organized collections, custom theme, conversion-optimized product pages, and mobile-first responsive design.",
-        shopifyComingSoonDesc: "I'm currently working on more Shopify stores. Stay tuned!",
-
-        // Contact Page
-        contactPageTitle: "Get In Touch",
-        contactPageSubtitle: "Let's discuss your project and bring your ideas to life",
-        contactInfoSubtext: "Feel free to reach out through any of these channels",
-        emailLabel: "Email",
-        phoneLabel: "Phone",
-        locationLabel: "Location",
-        connectWithMe: "Connect With Me",
-        sendMessageTitle: "Send Me a Message",
-        sendMessageSubtext: "Fill out the form below and I'll get back to you as soon as possible",
-        nameLabel: "Your Name *",
-        emailAddressLabel: "Your Email *",
-        phoneNumberLabel: "Phone Number",
-        subjectLabel: "Subject *",
-        messageLabel: "Your Message *",
-        submitButton: "Send Message",
-        namePlaceholder: "John Doe",
-        emailPlaceholder: "john@example.com",
-        phonePlaceholder: "+46 XX-XXX XX XX",
-        subjectPlaceholder: "Project Inquiry",
-        messagePlaceholder: "Tell me about your project...",
-        readyToStartProject: "Ready to Start Your Project?",
-        letsWorkTogether: "Let's work together to build something amazing",
-        seePortfolio: "See Portfolio"
+        playGame: "Play Game"
     },
     sv: {
         // Navigation
@@ -317,52 +272,7 @@ const translations = {
         // Project Actions
         viewCode: "Se Kod",
         liveDemo: "Live Demo",
-        playGame: "Spela Spel",
-
-        // WordPress Projects Page
-        wpProjectsTitle: "WordPress / WooCommerce",
-        wpProjectsSubtitle: "Anpassade teman och e-handelslösningar",
-
-        // WordPress Theme Project
-        wpThemeTitle: "Anpassat WordPress-Tema",
-        wpThemeType: "WordPress / WooCommerce",
-        wpThemeDesc: "Utvecklat och anpassat med eget tema med PHP, Sass och Vite.js för WordPress/WooCommerce-webbplatser till slutprojektarbetet, förbättrar deras funktionalitet och design.",
-
-        // Coming Soon
-        comingSoonTitle: "Fler Projekt Kommer Snart",
-        comingSoonDesc: "Jag arbetar för närvarande med fler WordPress- och WooCommerce-projekt. Håll utkik!",
-
-        // Shopify Projects Page
-        shopifyProjectsTitle: "Shopify-Butiker",
-        shopifyProjectsSubtitle: "Professionella e-handelslösningar byggda med Shopify",
-        shopifyStoreType: "Shopify E-Handelsbutik",
-        ironRepublicDesc: "Komplett träningsutrustningsbutik med 15+ produkter, organiserade samlingar, anpassat tema, konverteringsoptimerade produktsidor och mobilfokuserad responsiv design.",
-        shopifyComingSoonDesc: "Jag arbetar för närvarande med fler Shopify-butiker. Håll utkik!",
-
-        // Contact Page
-        contactPageTitle: "Kontakta Mig",
-        contactPageSubtitle: "Låt oss diskutera ditt projekt och förverkliga dina idéer",
-        contactInfoSubtext: "Tveka inte att höra av dig via någon av dessa kanaler",
-        emailLabel: "E-post",
-        phoneLabel: "Telefon",
-        locationLabel: "Plats",
-        connectWithMe: "Anslut Med Mig",
-        sendMessageTitle: "Skicka Mig ett Meddelande",
-        sendMessageSubtext: "Fyll i formuläret nedan så återkommer jag till dig så snart som möjligt",
-        nameLabel: "Ditt Namn *",
-        emailAddressLabel: "Din E-post *",
-        phoneNumberLabel: "Telefonnummer",
-        subjectLabel: "Ämne *",
-        messageLabel: "Ditt Meddelande *",
-        submitButton: "Skicka Meddelande",
-        namePlaceholder: "Johan Johansson",
-        emailPlaceholder: "johan@exempel.se",
-        phonePlaceholder: "+46 XX-XXX XX XX",
-        subjectPlaceholder: "Projektförfrågan",
-        messagePlaceholder: "Berätta om ditt projekt...",
-        readyToStartProject: "Redo att Starta Ditt Projekt?",
-        letsWorkTogether: "Låt oss samarbeta för att bygga något fantastiskt",
-        seePortfolio: "Se Portfölj"
+        playGame: "Spela Spel"
     }
 };
 
@@ -378,14 +288,6 @@ function setLanguage(lang) {
                 // Simply set the text content - this will work for all text elements
                 element.textContent = translations[lang][key];
             }
-        }
-    });
-
-    // Handle placeholder translations separately
-    document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
-        const key = element.getAttribute('data-i18n-placeholder');
-        if (translations[lang] && translations[lang][key]) {
-            element.placeholder = translations[lang][key];
         }
     });
 

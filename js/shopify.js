@@ -1,3 +1,4 @@
+
 // Translation data
 const translations = {
     en: {
@@ -155,32 +156,7 @@ const translations = {
         shopifyProjectsSubtitle: "Professional e-commerce solutions built with Shopify",
         shopifyStoreType: "Shopify E-Commerce Store",
         ironRepublicDesc: "Complete fitness equipment store with 15+ products, organized collections, custom theme, conversion-optimized product pages, and mobile-first responsive design.",
-        shopifyComingSoonDesc: "I'm currently working on more Shopify stores. Stay tuned!",
-
-        // Contact Page
-        contactPageTitle: "Get In Touch",
-        contactPageSubtitle: "Let's discuss your project and bring your ideas to life",
-        contactInfoSubtext: "Feel free to reach out through any of these channels",
-        emailLabel: "Email",
-        phoneLabel: "Phone",
-        locationLabel: "Location",
-        connectWithMe: "Connect With Me",
-        sendMessageTitle: "Send Me a Message",
-        sendMessageSubtext: "Fill out the form below and I'll get back to you as soon as possible",
-        nameLabel: "Your Name *",
-        emailAddressLabel: "Your Email *",
-        phoneNumberLabel: "Phone Number",
-        subjectLabel: "Subject *",
-        messageLabel: "Your Message *",
-        submitButton: "Send Message",
-        namePlaceholder: "John Doe",
-        emailPlaceholder: "john@example.com",
-        phonePlaceholder: "+46 XX-XXX XX XX",
-        subjectPlaceholder: "Project Inquiry",
-        messagePlaceholder: "Tell me about your project...",
-        readyToStartProject: "Ready to Start Your Project?",
-        letsWorkTogether: "Let's work together to build something amazing",
-        seePortfolio: "See Portfolio"
+        shopifyComingSoonDesc: "I'm currently working on more Shopify stores. Stay tuned!"
     },
     sv: {
         // Navigation
@@ -337,32 +313,7 @@ const translations = {
         shopifyProjectsSubtitle: "Professionella e-handelslösningar byggda med Shopify",
         shopifyStoreType: "Shopify E-Handelsbutik",
         ironRepublicDesc: "Komplett träningsutrustningsbutik med 15+ produkter, organiserade samlingar, anpassat tema, konverteringsoptimerade produktsidor och mobilfokuserad responsiv design.",
-        shopifyComingSoonDesc: "Jag arbetar för närvarande med fler Shopify-butiker. Håll utkik!",
-
-        // Contact Page
-        contactPageTitle: "Kontakta Mig",
-        contactPageSubtitle: "Låt oss diskutera ditt projekt och förverkliga dina idéer",
-        contactInfoSubtext: "Tveka inte att höra av dig via någon av dessa kanaler",
-        emailLabel: "E-post",
-        phoneLabel: "Telefon",
-        locationLabel: "Plats",
-        connectWithMe: "Anslut Med Mig",
-        sendMessageTitle: "Skicka Mig ett Meddelande",
-        sendMessageSubtext: "Fyll i formuläret nedan så återkommer jag till dig så snart som möjligt",
-        nameLabel: "Ditt Namn *",
-        emailAddressLabel: "Din E-post *",
-        phoneNumberLabel: "Telefonnummer",
-        subjectLabel: "Ämne *",
-        messageLabel: "Ditt Meddelande *",
-        submitButton: "Skicka Meddelande",
-        namePlaceholder: "Johan Johansson",
-        emailPlaceholder: "johan@exempel.se",
-        phonePlaceholder: "+46 XX-XXX XX XX",
-        subjectPlaceholder: "Projektförfrågan",
-        messagePlaceholder: "Berätta om ditt projekt...",
-        readyToStartProject: "Redo att Starta Ditt Projekt?",
-        letsWorkTogether: "Låt oss samarbeta för att bygga något fantastiskt",
-        seePortfolio: "Se Portfölj"
+        shopifyComingSoonDesc: "Jag arbetar för närvarande med fler Shopify-butiker. Håll utkik!"
     }
 };
 
@@ -378,14 +329,6 @@ function setLanguage(lang) {
                 // Simply set the text content - this will work for all text elements
                 element.textContent = translations[lang][key];
             }
-        }
-    });
-
-    // Handle placeholder translations separately
-    document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
-        const key = element.getAttribute('data-i18n-placeholder');
-        if (translations[lang] && translations[lang][key]) {
-            element.placeholder = translations[lang][key];
         }
     });
 

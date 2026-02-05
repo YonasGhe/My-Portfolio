@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopify Projects | Yonas Ghebremedhin</title>
+    <link rel="shortcut icon" href="images/portfilio.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/shopify-projects.css">
+    <script src="js/script.js" defer></script>
+    <script src="js/shopify.js" defer></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <a href="index.html">
+                <img src="images/4.png" alt="Logo" id="logo">
+            </a>
+            <button class="hamburger" aria-label="Toggle navigation menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html#about" data-i18n="aboutMe">About Me</a></li>
+                <li><a href="shopify-projects.html" data-i18n="shopify">Shopify</a></li>
+                <li><a href="wordpress-projects.html" data-i18n="wordpress">WordPress</a></li>
+                <li><a href="web-projects.html" data-i18n="webDevelopment">Web Development</a></li>
+                <li><a href="contact.html" data-i18n="contact">Contact</a></li>
+            </ul>
+            <select id="language-selector">
+                <option value="en">EN</option>
+                <option value="sv">SV</option>
+            </select>
+        </nav>
+    </header>
+
+    <!-- Hero Banner with Cover Image -->
+    <section class="page-hero" style="background-image: linear-gradient(rgba(102, 126, 234, 0.9), rgba(118, 75, 162, 0.9)), url('images/Skärmbild (84).png');">
+        <div class="page-hero-content">
+            <i class="fab fa-shopify" style="font-size: 4rem; margin-bottom: 20px;"></i>
+            <h1 data-i18n="shopifyProjectsTitle">Shopify Stores</h1>
+            <p data-i18n="shopifyProjectsSubtitle">Professional e-commerce solutions built with Shopify</p>
+            <a href="index.html#portfolio" class="btn btn-secondary">
+                <i class="fas fa-arrow-left"></i> <span data-i18n="backToPortfolio">Back to Portfolio</span>
+            </a>
+        </div>
+    </section>
+
+    <main>
+        <section class="projects-page-section">
+            <div class="container">
+                <!-- Shopify Projects Grid -->
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <img src="images/Skärmbild (84).png" alt="Iron Republic">
+                        <div class="project-info">
+                            <h3>Iron Republic Fitness</h3>
+                            <p class="project-type" data-i18n="shopifyStoreType">Shopify E-Commerce Store</p>
+                            <p class="project-desc" data-i18n="ironRepublicDesc">Complete fitness equipment store with 15+ products, organized collections, custom theme, conversion-optimized product pages, and mobile-first responsive design.</p>
+                            <div class="project-tech-tags">
+                                <span class="tech-badge">Shopify</span>
+                                <span class="tech-badge">Liquid</span>
+                                <span class="tech-badge">E-Commerce</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://iron-republic-demo.myshopify.com" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i> <span data-i18n="viewLiveStore">View Live Store</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Placeholder for more projects -->
+                    <div class="project-card coming-soon">
+                        <div class="project-info">
+                            <i class="fas fa-plus-circle"></i>
+                            <h3 data-i18n="comingSoonTitle">More Projects Coming Soon</h3>
+                            <p class="project-desc" data-i18n="shopifyComingSoonDesc">I'm currently working on more Shopify stores. Stay tuned!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-i18n="footerAboutTitle">About Me</h3>
+                    <p data-i18n="footerAboutText">Web developer and e-commerce specialist based in Sweden, helping businesses build high-converting online platforms.</p>
+                    <div class="social-links">
+                        <a href="https://github.com/YonasGhe" target="_blank" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/yonas-ghebremedhin-8bb353181/" target="_blank" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:yonas.ghebremedhin@gmail.com" class="social-link" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="tel:+46735871854" class="social-link" aria-label="Phone">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 data-i18n="quickLinksTitle">Quick Links</h3>
+                    <div class="quick-links">
+                        <a href="index.html#about"><i class="fas fa-chevron-right"></i> <span data-i18n="aboutMe">About Me</span></a>
+                        <a href="index.html#services"><i class="fas fa-chevron-right"></i> <span data-i18n="servicesTitle">Services</span></a>
+                        <a href="index.html#portfolio"><i class="fas fa-chevron-right"></i> <span data-i18n="portfolioTitle">Portfolio</span></a>
+                        <a href="contact.html"><i class="fas fa-chevron-right"></i> <span data-i18n="contact">Contact</span></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 data-i18n="contactInfoTitle">Contact Info</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:yonas.ghebremedhin@gmail.com">digital.dev@info.se</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+46798765432">+46 79-876 54 32</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Lund, Sweden</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footerRights">&copy; 2024 All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

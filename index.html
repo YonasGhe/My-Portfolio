@@ -1,118 +1,585 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Yonas Ghebremedhin's portfolio">
-    <meta property="og:url" content="https://yonasghe.github.io/My-Portfolio.se">
-    <meta property="og:description" content="Welcome to my professional portfolio. Explore my work and skills in web development.">
-    <meta property="og:image" content="https://My-Portfolio.se/images/1698229487528.jpg">
-    <meta property="og:url" content="https://My-portfolio.se">
-    <meta property="og:type" content="website">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="Yonas Ghebremedhin's portfolio">
+        <meta property="og:url"
+            content="https://yonasghe.github.io/My-Portfolio.se">
+        <meta property="og:description"
+            content="Welcome to my professional portfolio. Explore my work and skills in web development.">
+        <meta property="og:image"
+            content="https://My-Portfolio.se/images/1698229487528.jpg">
+        <meta property="og:type" content="website">
 
-    <title>Home | My-portfolio</title>
-    <link rel="shortcut icon" href="images/portfilio.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js" defer></script>
-</head>
-<body class="about-page">
-    <header>
-        <nav>
-            <a href="index.html">
-                <img src="images/4.png" alt="Logo" id="logo">
-            </a>
-            <button class="hamburger" aria-label="Toggle navigation menu">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </button>
-            <ul class="nav-links">
-                <li><a href="index.html#introduction" data-translate="about-me">About Me</a></li>
-                <li><a href="projects.html" data-translate="projects">Projects</a></li>
-                <li><a href="skills.html" data-translate="skills">Skills</a></li>
-                <li><a href="contact.html" data-translate="contact">Contact</a></li>
-                <li><a href="resume.html" data-translate="resume">Resume</a></li>
-            </ul>
-            <select id="language-selector">
-                <option value="en">EN</option>
-                <option value="sv">SV</option>
-            </select>
-        </nav>
-    </header>
+        <title>Yonas Ghebremedhin - Web Developer & E-Commerce
+            Specialist</title>
+        <link rel="shortcut icon" href="images/portfilio.png"
+            type="image/x-icon">
 
-    <main>
-        <div class="about">
-            <section id="introduction" class="lazy-load">
-                <div class="intro-content">
-                    <div class="intro-text">
-                        <h1 data-translate="about-me">ABOUT ME</h1>
-                        <h2 data-translate="I AM">I'M <i data-translate="yonas" class="zoomOut">Yonas Ghebremedhin</i> <strong>A</strong><br>
-                            <span id="rotating-text" data-translate="rotating-text">Web Developer</span>
+        <!-- Font Awesome for Icons -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <script src="js/script.js" defer></script>
+        <script src="js/translations.js" defer></script>
+    </head>
+    <body>
+        <!-- Navigation -->
+        <header>
+            <nav>
+                <a href="index.html">
+                    <img src="images/4.png" alt="Logo" id="logo">
+                </a>
+                <button class="hamburger" aria-label="Toggle navigation menu">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html#about" data-i18n="aboutMe">About
+                            Me</a></li>
+                    <li><a href="shopify-projects.html"
+                            data-i18n="shopify">Shopify</a></li>
+                    <li><a href="wordpress-projects.html"
+                            data-i18n="wordpress">WordPress</a></li>
+                    <li><a href="web-projects.html"
+                            data-i18n="webDevelopment">Web Development</a></li>
+                    <li><a href="contact.html"
+                            data-i18n="contact">Contact</a></li>
+                </ul>
+                <select id="language-selector">
+                    <option value="en">EN</option>
+                    <option value="sv">SV</option>
+                </select>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Hero Section -->
+            <section class="hero-section" id="about">
+                <div class="hero-container">
+                    <div class="hero-content">
+                        <div class="hero-badge">
+                            <span data-i18n="availableProjects">🚀 Available for
+                                New Projects</span>
+                        </div>
+
+                        <h1 class="hero-title">
+                            <span data-i18n="heroTitle">I Build Modern Web
+                                Solutions</span>
+                            <span class="highlight-gradient"
+                                data-i18n="heroHighlight">Web Development &
+                                E-Commerce</span>
+                        </h1>
+
+                        <h2 class="hero-subtitle" data-i18n="heroSubtitle">
+                            For Growing Businesses Online
                         </h2>
-                        <h3 data-translate="about-description">I am a passionate and talented web developer. As a person, I'm driven, motivated and communicative. 
-                            I'm also determined, reliable, and creative individual who is always ready to take new challenges. 
-                            In addition, I'm a problem-solving oriented and creative person who spends countless hours learning and practicing, always striving to improve my craft. 
-                            As a web developer, I have worked on several projects, both personal and professional, where I am honing my skills and gaining knowledge about the latest web development tools and technologies. 
-                            I have designed and developed websites for local businesses, non-profit organizations, and personal blogs. My work is characterized by its attractive appeal and ease of use, making it easy for users to navigate and access the information they need.</h3>
-                        <a href="#categories" class="link-button" data-translate="explore-my-work">Explore My Work</a>
+
+                        <p class="hero-description" data-i18n="heroDescription">
+                            Specializing in E-Commerce Platforms, Custom Web
+                            Development & Digital Solutions. I create
+                            professional web applications that look great and
+                            deliver real business value.
+                        </p>
+
+                        <div class="hero-cta">
+                            <a href="#services" class="btn btn-primary">
+                                <span data-i18n="viewServices">View My
+                                    Services</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="https://iron-republic-demo.myshopify.com"
+                                target="_blank" class="btn btn-secondary">
+                                <span data-i18n="seeLiveDemo">See Live
+                                    Demo</span>
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <span class="stat-icon">🏪</span>
+                                <span class="stat-number">15+</span>
+                                <span class="stat-label"
+                                    data-i18n="statsProjects">Projects</span>
+                            </div>
+                            <div class="stat-divider"></div>
+                            <div class="stat-item">
+                                <span class="stat-icon">⭐</span>
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label"
+                                    data-i18n="statsSatisfaction">Satisfaction</span>
+                            </div>
+                            <div class="stat-divider"></div>
+                            <div class="stat-item">
+                                <span class="stat-icon">🇸🇪</span>
+                                <span class="stat-number">Sweden</span>
+                                <span class="stat-label"
+                                    data-i18n="statsBased">Based</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="intro-image">
-                        <img src="images/449197583_513827517878720_4116139569957204352_n.jpg" alt="My Picture">
+                </div>
+
+                <!-- Animated background elements -->
+                <div class="hero-bg-shape shape-1"></div>
+                <div class="hero-bg-shape shape-2"></div>
+                <div class="hero-bg-shape shape-3"></div>
+            </section>
+
+            <!-- Skills Slider Section with Navigation Arrows -->
+            <!-- Skills Slider Section with Navigation Arrows -->
+            <section class="skills-slider-section">
+                <div class="container">
+                    <h2 class="section-title"
+                        data-i18n="skillsTitle">Technologies & Tools</h2>
+                    <p class="section-subtitle"
+                        data-i18n="skillsSubtitle">Expert in modern web
+                        development technologies</p>
+
+                    <div class="skills-slider-wrapper">
+                        <button class="slider-arrow slider-arrow-left"
+                            onclick="scrollSkills(-1)">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+
+                        <div class="skills-slider" id="skillsSlider">
+                            <div class="skill-slide">
+                                <img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                                    alt="HTML5">
+                                <span>HTML5</span>
+                            </div>
+                            <div class="skill-slide">
+                                <img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                                    alt="CSS3">
+                                <span>CSS3</span>
+                            </div>
+                            <div class="skill-slide">
+                                <img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                                    alt="JavaScript">
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="skill-slide">
+                                <img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                                    alt="React">
+                                <span>React</span>
+                            </div>
+                            <div class="skill-slide">
+                                <img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                                    alt="Node.js">
+                                <span>Node.js</span>
+                            </div>
+                            <div class="skill-slide">
+                                <img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+                                    alt="PHP">
+                                <span>PHP</span>
+                            </div>
+                            <div class="skill-slide">
+                                <img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                                    alt="MySQL">
+                                <span>MySQL</span>
+                            </div>
+                            <div class="skill-slide">
+                                <img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg"
+                                    alt="WordPress">
+                                <span>WordPress</span>
+                            </div>
+                            <div class="skill-slide">
+                                <img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg"
+                                    alt="Shopify">
+                                <span>Shopify</span>
+                            </div>
+                            <div class="skill-slide">
+                                <img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                                    alt="Git">
+                                <span>Git</span>
+                            </div>
+                            <div class="skill-slide">
+                                <img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
+                                    alt="Sass">
+                                <span>Sass</span>
+                            </div>
+                            <div class="skill-slide">
+                                <img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                                    alt="Bootstrap">
+                                <span>Bootstrap</span>
+                            </div>
+                        </div>
+
+                        <button class="slider-arrow slider-arrow-right"
+                            onclick="scrollSkills(1)">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
                     </div>
                 </div>
             </section>
-        </div>
 
-        <div id="categories" class="categories">
-            <section class="highlights">
-                <h2 data-translate="explore-my-work">Explore My Work</h2>
-                <div id="highlights">
-                    <div class="highlight-box">
-                        <img src="images/438125028_428145756780443_243458293361335990_n.jpg" alt="">
-                        <h3><a href="projects.html" data-translate="projects">Projects</a></h3>
-                        <p data-translate="home-projects-description">Take a look at some of the projects I've worked on during my studies.</p>
-                        <div class="links">
-                            <h3><a href="projects.html" data-translate="read-more">Read more</a></h3>
+            <!-- Services Section -->
+            <section id="services" class="services-section">
+                <div class="container">
+                    <h2 class="section-title" data-i18n="servicesTitle">Services
+                        I Offer</h2>
+                    <p class="section-subtitle"
+                        data-i18n="servicesSubtitle">Professional web
+                        development tailored to your business needs</p>
+
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <div class="service-icon">🏪</div>
+                            <h3 data-i18n="service1Title">E-Commerce
+                                Development</h3>
+                            <p data-i18n="service1Desc">Complete online store
+                                setup with Shopify or WooCommerce, custom theme
+                                design, payment integration, and launch
+                                support.</p>
+                            <ul class="service-features">
+                                <li data-i18n="service1Feature1">Custom theme
+                                    design</li>
+                                <li data-i18n="service1Feature2">Up to 50
+                                    products uploaded</li>
+                                <li data-i18n="service1Feature3">Payment &
+                                    shipping setup</li>
+                                <li data-i18n="service1Feature4">Mobile
+                                    optimization</li>
+                                <li data-i18n="service1Feature5">Training &
+                                    documentation</li>
+                            </ul>
+                            <p class="service-price"><span
+                                    data-i18n="serviceFrom">From</span>
+                                <strong>25,000 SEK</strong></p>
                         </div>
-                    </div>
-                    <div class="highlight-box">
-                        <img src="images/1698229487528.jpg" alt="">
-                        <h3><a href="skills.html" data-translate="skills">Skills</a></h3>
-                        <p data-translate="skills-description-home">Discover the skills I have acquired in web development and design.</p>
-                        <div class="links">
-                            <h3><a href="skills.html" data-translate="read-more">Read more</a></h3>
+
+                        <div class="service-card featured">
+                            <div class="popular-badge"
+                                data-i18n="popularBadge">MOST POPULAR</div>
+                            <div class="service-icon">🎨</div>
+                            <h3 data-i18n="service2Title">Custom Web
+                                Development</h3>
+                            <p data-i18n="service2Desc">Unique, responsive
+                                websites with advanced features, modern design,
+                                and ongoing support.</p>
+                            <ul class="service-features">
+                                <li data-i18n="service2Feature1">Fully custom
+                                    design</li>
+                                <li data-i18n="service2Feature2">Responsive
+                                    layout</li>
+                                <li data-i18n="service2Feature3">SEO
+                                    optimization</li>
+                                <li data-i18n="service2Feature4">Performance
+                                    optimization</li>
+                                <li data-i18n="service2Feature5">3 months
+                                    support</li>
+                            </ul>
+                            <p class="service-price"><span
+                                    data-i18n="serviceFrom">From</span>
+                                <strong>45,000 SEK</strong></p>
                         </div>
-                    </div>
-                    <div class="highlight-box">
-                        <img src="images/initial-letter-cv-logotype.webp" alt="">
-                        <h3><a href="resume.html" data-translate="resume">Resume</a></h3>
-                        <p data-translate="resume-description">View and download my resume for more details on my education and experience.</p>
-                        <div class="links">
-                            <h3><a href="resume.html" data-translate="read-more">Read more</a></h3>
+
+                        <div class="service-card">
+                            <div class="service-icon">🔧</div>
+                            <h3 data-i18n="service3Title">Monthly
+                                Maintenance</h3>
+                            <p data-i18n="service3Desc">Ongoing support,
+                                updates, performance monitoring, and
+                                optimization to keep your website running
+                                smoothly.</p>
+                            <ul class="service-features">
+                                <li data-i18n="service3Feature1">Monthly
+                                    updates</li>
+                                <li data-i18n="service3Feature2">Performance
+                                    monitoring</li>
+                                <li data-i18n="service3Feature3">Bug fixes &
+                                    support</li>
+                                <li data-i18n="service3Feature4">Feature
+                                    additions</li>
+                                <li data-i18n="service3Feature5">Priority
+                                    support</li>
+                            </ul>
+                            <p class="service-price"><span
+                                    data-i18n="serviceFrom">From</span>
+                                <strong>3,000 SEK/month</strong></p>
                         </div>
                     </div>
                 </div>
             </section>
-        </div>
-    </main>
 
-    <footer>
-        <div class="social-media">
-            <h2 data-translate="contact-me">Contact Me</h2>
-            <a href="https://github.com/YonasGhe" target="_blank">
-                <img src="images/github-icon-logo-E5FF767098-seeklogo.com.png" alt="">
-            </a>
-            <a href="https://www.linkedin.com/in/yonas-ghebremedhin-8bb353181/" target="_blank">
-                <img src="images/linkedin.png" alt="">
-            </a>
-            <a href="mailto:yonas.ghebremedhin@gmail.com" target="_blank">
-                <img src="images/gratis-png-logo-de-la-aplicacion-de-mensajes-correo-electronico-del-iphone-iconos-de-computadora-correo-electronico-thumbnail.png" alt="">
-            </a>
-            <a href="tel: 073-587 18 54" target="_blank">
-                <img src="images/4367049.png" alt="">
-            </a>
-        </div>
-        <p class="copy">&copy; <span data-translate="copyright">Developed by Yonas </span></p>
-    </footer>
-</body>
+            <!-- Featured Project -->
+            <div class="featured-project">
+                <div class="featured-badge" data-i18n="featuredBadge">FEATURED
+                    PROJECT</div>
+
+                <img src="images/Skärmbild (84).png"
+                    alt="Iron Republic Fitness E-Commerce Store"
+                    class="project-image">
+
+                <div class="project-content">
+                    <h3 class="project-title">Iron Republic Fitness</h3>
+                    <p class="project-type" data-i18n="featuredType">Shopify
+                        Development | E-Commerce</p>
+
+                    <p class="project-description" data-i18n="featuredDesc">
+                        Complete e-commerce store for fitness equipment retailer
+                        featuring custom Shopify theme development,
+                        15+ products with detailed descriptions, organized
+                        collections, conversion-optimized product pages,
+                        and mobile-first responsive design. Includes email
+                        marketing integration, customer account system,
+                        and professional footer with multiple navigation
+                        sections.
+                    </p>
+
+                    <div class="project-features">
+                        <h4 data-i18n="featuredFeaturesTitle">Key Features:</h4>
+                        <ul>
+                            <li data-i18n="featuredFeature1">Custom Shopify
+                                theme customization</li>
+                            <li data-i18n="featuredFeature2">15+ products with
+                                professional images</li>
+                            <li data-i18n="featuredFeature3">5 organized product
+                                collections</li>
+                            <li
+                                data-i18n="featuredFeature4">Conversion-optimized
+                                product pages</li>
+                            <li data-i18n="featuredFeature5">Mobile-responsive
+                                design</li>
+                            <li data-i18n="featuredFeature6">SEO-ready
+                                structure</li>
+                            <li data-i18n="featuredFeature7">Email newsletter
+                                integration</li>
+                            <li data-i18n="featuredFeature8">Multi-column footer
+                                navigation</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-tags">
+                        <span class="tag">Shopify</span>
+                        <span class="tag">E-Commerce</span>
+                        <span class="tag" data-i18n="tagMobileOptimized">Mobile
+                            Optimized</span>
+                        <span class="tag">SEO</span>
+                        <span class="tag" data-i18n="tagResponsive">Responsive
+                            Design</span>
+                        <span class="tag" data-i18n="tagPayment">Payment
+                            Integration</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://iron-republic-demo.myshopify.com"
+                            target="_blank" class="btn btn-primary btn-large">
+                            <span data-i18n="viewLiveStore">View Live
+                                Store</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Portfolio Categories Section -->
+            <section id="portfolio" class="portfolio-section">
+                <div class="container">
+                    <h2 class="section-title" data-i18n="portfolioTitle">My
+                        Work</h2>
+                    <p class="section-subtitle"
+                        data-i18n="portfolioSubtitle">Explore projects by
+                        category</p>
+
+                    <!-- Category Cards with Cover Images -->
+                    <div class="category-cards">
+                        <a href="shopify-projects.html" class="category-card">
+                            <div class="category-image">
+                                <img src="images/Skärmbild (84).png"
+                                    alt="Shopify Projects">
+                                <div class="category-overlay">
+                                    <i class="fab fa-shopify"></i>
+                                </div>
+                            </div>
+                            <div class="category-info">
+                                <h3 data-i18n="shopifyCategory">Shopify
+                                    Stores</h3>
+                                <p data-i18n="shopifyDesc">Professional
+                                    e-commerce solutions</p>
+                                <span class="category-arrow"><span
+                                        data-i18n="viewProjects">View
+                                        Projects</span> <i
+                                        class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </a>
+
+                        <a href="wordpress-projects.html" class="category-card">
+                            <div class="category-image">
+                                <img
+                                    src="images/438125151_4550792788478268_5430753094236116949_n.jpg"
+                                    alt="WordPress Projects">
+                                <div class="category-overlay">
+                                    <i class="fab fa-wordpress"></i>
+                                </div>
+                            </div>
+                            <div class="category-info">
+                                <h3 data-i18n="wordpressCategory">WordPress /
+                                    WooCommerce</h3>
+                                <p data-i18n="wordpressDesc">Custom themes &
+                                    plugins</p>
+                                <span class="category-arrow"><span
+                                        data-i18n="viewProjects">View
+                                        Projects</span> <i
+                                        class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </a>
+
+                        <a href="web-projects.html" class="category-card">
+                            <div class="category-image">
+                                <img src="images/1698229487528.jpg"
+                                    alt="Web Development Projects">
+                                <div class="category-overlay">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                            </div>
+                            <div class="category-info">
+                                <h3 data-i18n="webDevCategory">Web
+                                    Development</h3>
+                                <p data-i18n="webDevDesc">Full-stack
+                                    applications & APIs</p>
+                                <span class="category-arrow"><span
+                                        data-i18n="viewProjects">View
+                                        Projects</span> <i
+                                        class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="contact-section">
+                <div class="container">
+                    <h2 data-i18n="contactTitle">Ready to Launch Your Online
+                        Project?</h2>
+
+                    <p class="contact-intro" data-i18n="contactIntro">
+                        Let's discuss your web development project and how I can
+                        help you build
+                        a professional website that drives results and grows
+                        your business.
+                    </p>
+
+                    <div class="contact-cta">
+                        <a href="mailto:yonas.ghebremedhin@gmail.com"
+                            class="btn btn-large btn-primary">
+                            <span data-i18n="getFreeConsultation">Get Your Free
+                                Consultation</span>
+                        </a>
+                        <p class="contact-subtitle">
+                            <span data-i18n="orCall">Or call me directly:</span>
+                            <a href="tel:+46798765432">+46 79-876 54 32</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-content">
+                    <!-- About Section -->
+                    <div class="footer-section">
+                        <h3 data-i18n="footerAboutTitle">About Me</h3>
+                        <p data-i18n="footerAboutText">Web developer and
+                            e-commerce specialist based in Sweden, helping
+                            businesses build high-converting online
+                            platforms.</p>
+                        <div class="social-links">
+                            <a href="https://github.com/YonasGhe"
+                                target="_blank" class="social-link"
+                                aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a
+                                href="https://www.linkedin.com/in/yonas-ghebremedhin-8bb353181/"
+                                target="_blank" class="social-link"
+                                aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="mailto:yonas.ghebremedhin@gmail.com"
+                                class="social-link" aria-label="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="tel:+46735871854" class="social-link"
+                                aria-label="Phone">
+                                <i class="fas fa-phone"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="footer-section">
+                        <h3 data-i18n="quickLinksTitle">Quick Links</h3>
+                        <div class="quick-links">
+                            <a href="index.html#about"><i
+                                    class="fas fa-chevron-right"></i> <span
+                                    data-i18n="aboutMe">About Me</span></a>
+                            <a href="shopify-projects.html"><i
+                                    class="fas fa-chevron-right"></i> <span
+                                    data-i18n="shopifyProjects">Shopify
+                                    Projects</span></a>
+                            <a href="wordpress-projects.html"><i
+                                    class="fas fa-chevron-right"></i> <span
+                                    data-i18n="wordpressProjects">WordPress
+                                    Projects</span></a>
+                            <a href="web-projects.html"><i
+                                    class="fas fa-chevron-right"></i> <span
+                                    data-i18n="webDevProjects">Web
+                                    Development</span></a>
+                            <a href="contact.html"><i
+                                    class="fas fa-chevron-right"></i> <span
+                                    data-i18n="contact">Contact</span></a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="footer-section">
+                        <h3 data-i18n="contactInfoTitle">Contact Info</h3>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <a
+                                    href="mailto:yonas.ghebremedhin@gmail.com">digital.dev@info.se</a>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <a href="tel:+46798765432">+46 79-876 54 32</a>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Lund, Sweden</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer Bottom -->
+                <div class="footer-bottom">
+                    <p data-i18n="footerRights">&copy; 2024 All rights
+                        reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>
