@@ -4,6 +4,8 @@ const translations = {
     en: {
         // Navigation
         aboutMe: "About Me",
+        skills: "Skills",
+        projects: "Projects",
         shopify: "Shopify",
         wordpress: "WordPress",
         webDevelopment: "Web Development",
@@ -106,6 +108,8 @@ const translations = {
     sv: {
         // Navigation
         aboutMe: "Om Mig",
+        skills: "Kompetenser",
+        projects: "Projekt",
         shopify: "Shopify",
         wordpress: "WordPress",
         webDevelopment: "Webbutveckling",
