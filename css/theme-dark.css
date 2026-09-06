@@ -1,0 +1,571 @@
+/* =============================================================
+ * Portfolio — DARK PROFESSIONAL theme override (2026-09-05)
+ * Load AFTER style.css and any page-specific CSS.
+ * Turns purple/pink/yellow palette into slate + emerald + amber.
+ * ============================================================= */
+
+:root {
+    --dk-bg-0:        #0a1524;   /* page bg deepest */
+    --dk-bg-1:        #0f1e33;   /* section bg */
+    --dk-bg-2:        #142942;   /* card bg */
+    --dk-fg-0:        #f8fafc;   /* primary text */
+    --dk-fg-1:        #cbd5e1;   /* secondary text */
+    --dk-fg-2:        #94a3b8;   /* muted text */
+    --dk-border:      rgba(255, 255, 255, 0.1);
+    --dk-border-hi:   rgba(255, 255, 255, 0.18);
+    --dk-accent:      #10b981;   /* emerald (matches VerdantCart brand) */
+    --dk-accent-2:    #34d399;   /* mint */
+    --dk-accent-alt:  #f59e0b;   /* amber (call to action) */
+    --dk-glow:        rgba(16, 185, 129, 0.35);
+}
+
+/* ---------- Base ---------- */
+html, body {
+    background: var(--dk-bg-0) !important;
+    color: var(--dk-fg-0) !important;
+    font-family: 'Inter', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background:
+        radial-gradient(1200px 800px at 15% -10%, rgba(16, 185, 129, 0.10), transparent 60%),
+        radial-gradient(900px 600px at 90% 110%, rgba(245, 158, 11, 0.06), transparent 60%),
+        linear-gradient(180deg, var(--dk-bg-0) 0%, #05101f 100%);
+    pointer-events: none;
+}
+
+/* ---------- Nav / Header ---------- */
+header {
+    background: rgba(10, 21, 36, 0.85) !important;
+    backdrop-filter: blur(16px) !important;
+    -webkit-backdrop-filter: blur(16px) !important;
+    border-bottom: 1px solid var(--dk-border) !important;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35) !important;
+}
+
+nav a, nav a:visited,
+.nav-links a, .nav-links a:visited {
+    color: var(--dk-fg-1) !important;
+    transition: color 0.2s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--dk-accent-2) !important;
+}
+nav a img#logo {
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+#language-selector {
+    background: rgba(255, 255, 255, 0.05) !important;
+    color: var(--dk-fg-0) !important;
+    border: 1px solid var(--dk-border-hi) !important;
+    border-radius: 8px !important;
+    padding: 6px 12px !important;
+}
+#language-selector option {
+    background: var(--dk-bg-2) !important;
+    color: var(--dk-fg-0) !important;
+}
+
+.hamburger .line {
+    background: var(--dk-fg-0) !important;
+}
+
+/* ---------- HERO ---------- */
+.hero-section,
+.hero-container,
+main > section:first-of-type {
+    background: transparent !important;
+}
+
+.hero-badge {
+    background: rgba(16, 185, 129, 0.12) !important;
+    color: var(--dk-accent-2) !important;
+    border: 1px solid rgba(16, 185, 129, 0.35) !important;
+    padding: 8px 18px !important;
+    border-radius: 999px !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    backdrop-filter: blur(8px);
+}
+
+.hero-content h1,
+.hero-title,
+h1 {
+    color: var(--dk-fg-0) !important;
+    letter-spacing: -0.02em !important;
+    line-height: 1.1 !important;
+}
+
+/* The old "Web Development & E-Commerce" yellow accent → emerald */
+.hero-content h1 span,
+.hero-title span,
+.hero-highlight,
+.accent-text,
+.highlight {
+    background: linear-gradient(135deg, #34d399 0%, #10b981 50%, #059669 100%) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    color: transparent !important;
+    text-shadow: none !important;
+    filter: drop-shadow(0 4px 24px rgba(16, 185, 129, 0.3));
+}
+
+.hero-content p,
+.hero-subtitle,
+.hero-description {
+    color: var(--dk-fg-1) !important;
+}
+
+/* ---------- Buttons ---------- */
+.btn, .cta-button, button.primary,
+a.btn-primary, .btn-primary,
+input[type="submit"] {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%) !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(16, 185, 129, 0.5) !important;
+    border-radius: 10px !important;
+    padding: 12px 24px !important;
+    font-weight: 600 !important;
+    box-shadow: 0 8px 24px rgba(16, 185, 129, 0.3) !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+    text-decoration: none !important;
+}
+.btn:hover, .cta-button:hover, button.primary:hover,
+a.btn-primary:hover, .btn-primary:hover,
+input[type="submit"]:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 12px 32px rgba(16, 185, 129, 0.45) !important;
+    background: linear-gradient(135deg, #059669 0%, #047857 100%) !important;
+}
+
+.btn-secondary, a.btn-secondary {
+    background: rgba(255, 255, 255, 0.06) !important;
+    color: var(--dk-fg-0) !important;
+    border: 1px solid var(--dk-border-hi) !important;
+    border-radius: 10px !important;
+    padding: 12px 24px !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+    transition: background 0.2s ease, border-color 0.2s ease !important;
+}
+.btn-secondary:hover, a.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.12) !important;
+    border-color: var(--dk-accent) !important;
+}
+
+/* ---------- Sections ---------- */
+section {
+    background: transparent !important;
+}
+section:nth-of-type(even) {
+    background: rgba(255, 255, 255, 0.015) !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--dk-fg-0) !important;
+}
+
+section h2::after,
+.section-title::after {
+    background: linear-gradient(90deg, var(--dk-accent) 0%, var(--dk-accent-2) 100%) !important;
+}
+
+p, li, .text {
+    color: var(--dk-fg-1) !important;
+}
+
+/* ---------- Cards (About / Skills / Projects) ---------- */
+.about-card, .skill-card, .project-card, .service-card,
+.card, .info-card, .feature-card, .stat-card, .timeline-item,
+article.post, .blog-card {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%) !important;
+    border: 1px solid var(--dk-border) !important;
+    border-radius: 16px !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3) !important;
+    color: var(--dk-fg-0) !important;
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease !important;
+}
+.about-card:hover, .skill-card:hover, .project-card:hover, .service-card:hover,
+.card:hover, .info-card:hover, .feature-card:hover, .stat-card:hover {
+    transform: translateY(-4px) !important;
+    border-color: rgba(16, 185, 129, 0.4) !important;
+    box-shadow: 0 16px 40px rgba(16, 185, 129, 0.15), 0 8px 32px rgba(0, 0, 0, 0.4) !important;
+}
+
+.skill-icon, .project-icon, .service-icon {
+    color: var(--dk-accent-2) !important;
+}
+
+/* Skill/Project chips + tags */
+.skill-tag, .tech-tag, .badge, .chip {
+    background: rgba(16, 185, 129, 0.12) !important;
+    color: var(--dk-accent-2) !important;
+    border: 1px solid rgba(16, 185, 129, 0.28) !important;
+    padding: 4px 12px !important;
+    border-radius: 999px !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+}
+
+/* ---------- Links inline ---------- */
+main a:not(.btn):not(.nav-links a):not(.cta-button):not(.btn-secondary) {
+    color: var(--dk-accent-2) !important;
+    text-decoration: none !important;
+    border-bottom: 1px dashed rgba(52, 211, 153, 0.4) !important;
+    transition: border-color 0.2s ease, color 0.2s ease !important;
+}
+main a:not(.btn):not(.nav-links a):not(.cta-button):not(.btn-secondary):hover {
+    color: #6ee7b7 !important;
+    border-bottom-color: currentColor !important;
+}
+
+/* ---------- Forms (contact page) ---------- */
+input[type="text"], input[type="email"], input[type="tel"],
+input[type="url"], textarea, select {
+    background: rgba(255, 255, 255, 0.05) !important;
+    color: var(--dk-fg-0) !important;
+    border: 1px solid var(--dk-border-hi) !important;
+    border-radius: 10px !important;
+    padding: 12px 16px !important;
+    font-family: inherit !important;
+    transition: border-color 0.2s ease, background 0.2s ease !important;
+}
+input:focus, textarea:focus, select:focus {
+    outline: none !important;
+    border-color: var(--dk-accent) !important;
+    background: rgba(255, 255, 255, 0.08) !important;
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2) !important;
+}
+label, .form-label {
+    color: var(--dk-fg-1) !important;
+}
+
+/* ---------- Footer ---------- */
+footer {
+    background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.4) 100%) !important;
+    color: var(--dk-fg-1) !important;
+    border-top: 1px solid var(--dk-border) !important;
+    padding: 40px 0 !important;
+}
+footer a, footer p, footer span {
+    color: var(--dk-fg-1) !important;
+}
+footer a:hover {
+    color: var(--dk-accent-2) !important;
+}
+
+/* ---------- Scrollbar ---------- */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-track {
+    background: var(--dk-bg-0);
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(16, 185, 129, 0.3);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(16, 185, 129, 0.5);
+}
+
+/* ---------- Selection ---------- */
+::selection {
+    background: rgba(16, 185, 129, 0.4);
+    color: #ffffff;
+}
+
+/* ---------- Mobile menu overlay ---------- */
+@media (max-width: 768px) {
+    .nav-links {
+        background: rgba(10, 21, 36, 0.98) !important;
+        backdrop-filter: blur(20px) !important;
+    }
+    .nav-links a {
+        color: var(--dk-fg-0) !important;
+    }
+}
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* =============================================================
+ * v2 patch (2026-09-05) — fix remaining light-background sections
+ * Featured project, portfolio categories, key features box, focus card.
+ * ============================================================= */
+
+/* Section wrappers */
+.services-section,
+.focus-section,
+.portfolio-section,
+.featured-project,
+.about-section,
+.skills-slider-section,
+.contact-section {
+    background: transparent !important;
+}
+
+.section-title {
+    color: var(--dk-fg-0) !important;
+}
+.section-subtitle {
+    color: var(--dk-fg-2) !important;
+}
+
+/* Featured project (Iron Republic / VerdantCart etc.) */
+.featured-project {
+    max-width: 1200px;
+    margin: 60px auto !important;
+    padding: 40px !important;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.01) 100%) !important;
+    border: 1px solid var(--dk-border) !important;
+    border-radius: 20px !important;
+    backdrop-filter: blur(12px) !important;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4) !important;
+    color: var(--dk-fg-0) !important;
+}
+.featured-project .featured-badge {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%) !important;
+    color: #ffffff !important;
+    padding: 6px 14px !important;
+    border-radius: 999px !important;
+    display: inline-block !important;
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.1em !important;
+    margin-bottom: 20px !important;
+    box-shadow: 0 4px 16px rgba(16, 185, 129, 0.35) !important;
+}
+.featured-project .project-title,
+.featured-project h3 {
+    color: var(--dk-fg-0) !important;
+    font-size: clamp(30px, 4vw, 44px) !important;
+    line-height: 1.1 !important;
+}
+.featured-project .project-type {
+    color: var(--dk-accent-2) !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    margin-bottom: 16px !important;
+}
+.featured-project .project-description,
+.featured-project p {
+    color: var(--dk-fg-1) !important;
+}
+
+.featured-project .project-image {
+    border-radius: 16px !important;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4) !important;
+    border: 1px solid var(--dk-border) !important;
+}
+
+/* Key Features / project-features box (the one that was white with red border) */
+.project-features {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.08) 0%, rgba(16, 185, 129, 0.02) 100%) !important;
+    border: 1px solid rgba(16, 185, 129, 0.25) !important;
+    border-left: 4px solid var(--dk-accent) !important;
+    border-radius: 12px !important;
+    padding: 24px !important;
+    margin: 20px 0 !important;
+    color: var(--dk-fg-0) !important;
+}
+.project-features h4 {
+    color: var(--dk-fg-0) !important;
+    margin-bottom: 16px !important;
+}
+.project-features ul,
+.project-features li {
+    color: var(--dk-fg-1) !important;
+    list-style: none !important;
+}
+.project-features li::before {
+    content: "✓" !important;
+    color: var(--dk-accent-2) !important;
+    font-weight: 700 !important;
+    margin-right: 8px !important;
+}
+
+/* Project tags row */
+.project-tags {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+    margin: 20px 0 !important;
+}
+.project-tags span,
+.project-tags .tag {
+    background: rgba(255, 255, 255, 0.06) !important;
+    color: var(--dk-fg-1) !important;
+    border: 1px solid var(--dk-border-hi) !important;
+    padding: 4px 12px !important;
+    border-radius: 999px !important;
+    font-size: 12px !important;
+    font-weight: 500 !important;
+}
+
+/* Portfolio category cards */
+.category-cards {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+    gap: 24px !important;
+    margin-top: 40px !important;
+}
+.category-card {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%) !important;
+    border: 1px solid var(--dk-border) !important;
+    border-radius: 16px !important;
+    overflow: hidden !important;
+    text-decoration: none !important;
+    color: var(--dk-fg-0) !important;
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+.category-card:hover {
+    transform: translateY(-4px) !important;
+    border-color: rgba(16, 185, 129, 0.4) !important;
+    box-shadow: 0 16px 40px rgba(16, 185, 129, 0.15), 0 8px 32px rgba(0, 0, 0, 0.4) !important;
+}
+.category-image {
+    position: relative !important;
+    overflow: hidden !important;
+    aspect-ratio: 16 / 10 !important;
+}
+.category-image img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}
+.category-overlay {
+    position: absolute !important;
+    inset: 0 !important;
+    background: linear-gradient(180deg, rgba(10, 21, 36, 0.2) 0%, rgba(10, 21, 36, 0.7) 100%) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    color: #ffffff !important;
+    font-size: 48px !important;
+}
+.category-info {
+    padding: 24px !important;
+    color: var(--dk-fg-0) !important;
+}
+.category-info h3 {
+    color: var(--dk-fg-0) !important;
+    margin-bottom: 8px !important;
+}
+.category-info p {
+    color: var(--dk-fg-2) !important;
+    margin-bottom: 16px !important;
+}
+.category-arrow {
+    color: var(--dk-accent-2) !important;
+    font-weight: 600 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+}
+.category-arrow i {
+    transition: transform 0.2s ease !important;
+}
+.category-card:hover .category-arrow i {
+    transform: translateX(4px) !important;
+}
+
+/* Focus section (replaces old services section) */
+.focus-card {
+    max-width: 900px !important;
+    margin: 40px auto 0 !important;
+    padding: 48px !important;
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.06) 0%, rgba(255, 255, 255, 0.02) 100%) !important;
+    border: 1px solid rgba(16, 185, 129, 0.25) !important;
+    border-radius: 20px !important;
+    backdrop-filter: blur(12px) !important;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4) !important;
+    color: var(--dk-fg-0) !important;
+}
+.focus-badge {
+    display: inline-block !important;
+    background: rgba(16, 185, 129, 0.15) !important;
+    color: var(--dk-accent-2) !important;
+    border: 1px solid rgba(16, 185, 129, 0.35) !important;
+    padding: 6px 14px !important;
+    border-radius: 999px !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    margin-bottom: 20px !important;
+}
+.focus-card h3 {
+    font-size: clamp(28px, 3.5vw, 40px) !important;
+    color: var(--dk-fg-0) !important;
+    margin-bottom: 16px !important;
+    letter-spacing: -0.02em !important;
+}
+.focus-card > p {
+    color: var(--dk-fg-1) !important;
+    font-size: 17px !important;
+    line-height: 1.65 !important;
+    margin-bottom: 24px !important;
+}
+.focus-highlights {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 0 32px !important;
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) !important;
+    gap: 12px !important;
+}
+.focus-highlights li {
+    color: var(--dk-fg-1) !important;
+    padding: 12px 16px !important;
+    background: rgba(255, 255, 255, 0.04) !important;
+    border: 1px solid var(--dk-border) !important;
+    border-radius: 10px !important;
+    font-size: 14.5px !important;
+}
+.focus-highlights li strong {
+    color: var(--dk-accent-2) !important;
+}
+.focus-cta {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 12px !important;
+}
+
+/* Contact section */
+.contact-section {
+    padding: 60px 0 !important;
+}
+.contact-container,
+.contact-form,
+.contact-info {
+    background: transparent !important;
+    color: var(--dk-fg-0) !important;
+}
+
+/* Skills slider */
+.skills-slider-section .skill-item,
+.skill-item {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid var(--dk-border) !important;
+    color: var(--dk-fg-0) !important;
+}

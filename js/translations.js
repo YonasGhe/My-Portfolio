@@ -102,8 +102,106 @@ const translations = {
         contactInfoTitle: "Contact Info",
         footerRights: "© 2024 Yonas Ghebremedhin. All rights reserved. | Developed with ❤ in Sweden",
 
+        // Legacy alias — HTML uses `availableProjects` in some places
+        availableProjects: "🚀 Available for New Projects",
+
+        // Featured Project Features (Iron Republic Fitness)
+        featuredFeature1: "Custom Shopify theme development",
+        featuredFeature2: "15+ products with detailed descriptions",
+        featuredFeature3: "5 organized product collections",
+        featuredFeature4: "Conversion-optimized product pages",
+        featuredFeature5: "Mobile-responsive design",
+        featuredFeature6: "SEO-ready structure",
+        featuredFeature7: "Email newsletter integration",
+        featuredFeature8: "Multi-column footer with navigation",
+
+        // Tags
+        tagResponsive: "Responsive",
+        tagPayment: "Payment",
+        tagMobileOptimized: "Mobile Optimized",
+
+        // Stats
+        statsBased: "Based",
+
+        // Portfolio / CTA
+        seePortfolio: "See Portfolio",
+        readyToStartProject: "Ready to Start Your Project?",
+        letsWorkTogether: "Let's work together to build something amazing.",
+        connectWithMe: "Connect With Me",
+        serviceFrom: "From",
+
+        // Contact Page
+        contactPageTitle: "Get in Touch",
+        contactPageSubtitle: "Let's discuss your project",
+        nameLabel: "Name",
+        emailLabel: "Email",
+        phoneLabel: "Phone",
+        subjectLabel: "Subject",
+        messageLabel: "Message",
+        submitButton: "Send Message",
+        sendMessageTitle: "Send a Message",
+        sendMessageSubtext: "I'll get back to you within 24 hours",
+        contactInfoSubtext: "Feel free to reach out anytime",
+        emailAddressLabel: "Email Address",
+        phoneNumberLabel: "Phone Number",
+        locationLabel: "Location",
+
+        // Project Detail Pages - Common
+        viewCode: "View Code",
+        liveDemo: "Live Demo",
+
+        // Shopify Projects Page
+        shopifyProjects: "Shopify Projects",
+        shopifyProjectsTitle: "Shopify Store Development",
+        shopifyProjectsSubtitle: "Professional e-commerce solutions built for growth",
+        shopifyStoreType: "Shopify Store",
+        ironRepublicDesc: "Complete e-commerce store for fitness equipment retailer with custom theme, 15+ products, and mobile-first design.",
+        shopifyComingSoonDesc: "I'm currently working on more Shopify projects. Check back soon!",
+
+        // WordPress Projects Page
+        wordpressProjects: "WordPress Projects",
+        wpProjectsTitle: "WordPress & WooCommerce Development",
+        wpProjectsSubtitle: "Custom themes and e-commerce solutions",
+        wpThemeType: "WordPress / WooCommerce",
+        wpThemeTitle: "Custom WordPress Theme",
+        wpThemeDesc: "Developed and customized a WordPress theme with tailored features for the client's business needs.",
+
+        // Web Projects Page
+        webDevProjects: "Web Development Projects",
+        webProjectsTitle: "Custom Web Applications",
+        webProjectsSubtitle: "Full-stack applications built with modern technologies",
+        webAppType: "Web Application",
+        backendType: "Backend Development",
+        fullStackType: "Full-Stack Development",
+        webShopTitle: "E-Commerce Web Shop",
+        webShopDesc: "Custom e-commerce solution with product catalog, shopping cart, and payment integration.",
+        weatherAppTitle: "Weather Application",
+        weatherAppDesc: "Real-time weather app with location-based forecasts and interactive UI.",
+        databaseTitle: "Database Solutions",
+        databaseDesc: "SQL and NoSQL database design, optimization, and management.",
+
+        // Coming Soon
+        comingSoonTitle: "More Projects Coming Soon",
+        comingSoonDesc: "I'm currently working on new projects. Check back soon for updates!",
+
         // Project Pages
-        backToPortfolio: "← Back to Portfolio"
+        backToPortfolio: "← Back to Portfolio",
+
+        // Hero — updated 2026-09-05 (VerdantCart-focused CTAs)
+        viewCurrentWork: "See my current work — VerdantCart AI",
+        viewAllProjects: "View all projects",
+
+        // Focus Section (replaces Services)
+        focusTitle: "Currently building",
+        focusSubtitle: "Full-time on VerdantCart AI — open-source sustainability reporting for WooCommerce merchants worldwide.",
+        focusBadge: "🌲 Solo indie · GPL-2.0 · Sweden",
+        focusDesc: "A WordPress plugin ecosystem giving WooCommerce merchants real sustainability reporting — carbon dashboards, audit-ready PDF reports, /carbon.txt publishing, and buyer trust badges — without €500/month enterprise SaaS pricing.",
+        focusHighlight1: "<strong>850+</strong> downloads on WordPress.org",
+        focusHighlight2: "<strong>v1.4.0</strong> live · Free + Pro + Pro+ tiers",
+        focusHighlight3: "In dialogue with <strong>Green Web Foundation</strong> on carbon.txt interop",
+        focusHighlight4: "Applying to <strong>NLnet Restack</strong> fund (Nov 2026)",
+        visitVerdantcart: "Visit verdantcart.ai",
+        installFree: "Install free plugin"
     },
     sv: {
         // Navigation
@@ -206,8 +304,106 @@ const translations = {
         contactInfoTitle: "Kontaktinformation",
         footerRights: "© 2024 Yonas Ghebremedhin. Alla rättigheter förbehållna. | Utvecklad med ❤ i Sverige",
 
+        // Legacy alias — HTML uses `availableProjects` in some places
+        availableProjects: "🚀 Tillgänglig för Nya Projekt",
+
+        // Featured Project Features (Iron Republic Fitness)
+        featuredFeature1: "Anpassad Shopify-temautveckling",
+        featuredFeature2: "15+ produkter med detaljerade beskrivningar",
+        featuredFeature3: "5 organiserade produktsamlingar",
+        featuredFeature4: "Konverteringsoptimerade produktsidor",
+        featuredFeature5: "Mobilresponsiv design",
+        featuredFeature6: "SEO-förberedd struktur",
+        featuredFeature7: "Integrerat e-postnyhetsbrev",
+        featuredFeature8: "Flerkolumns sidfot med navigering",
+
+        // Tags
+        tagResponsive: "Responsiv",
+        tagPayment: "Betalning",
+        tagMobileOptimized: "Mobiloptimerad",
+
+        // Stats
+        statsBased: "Baserad",
+
+        // Portfolio / CTA
+        seePortfolio: "Se Portfölj",
+        readyToStartProject: "Redo att Starta Ditt Projekt?",
+        letsWorkTogether: "Låt oss samarbeta för att bygga något fantastiskt.",
+        connectWithMe: "Kom i Kontakt",
+        serviceFrom: "Från",
+
+        // Contact Page
+        contactPageTitle: "Kontakta Mig",
+        contactPageSubtitle: "Låt oss diskutera ditt projekt",
+        nameLabel: "Namn",
+        emailLabel: "E-post",
+        phoneLabel: "Telefon",
+        subjectLabel: "Ämne",
+        messageLabel: "Meddelande",
+        submitButton: "Skicka Meddelande",
+        sendMessageTitle: "Skicka ett Meddelande",
+        sendMessageSubtext: "Jag återkommer inom 24 timmar",
+        contactInfoSubtext: "Tveka inte att höra av dig när som helst",
+        emailAddressLabel: "E-postadress",
+        phoneNumberLabel: "Telefonnummer",
+        locationLabel: "Plats",
+
+        // Project Detail Pages - Common
+        viewCode: "Visa Kod",
+        liveDemo: "Live Demo",
+
+        // Shopify Projects Page
+        shopifyProjects: "Shopify-Projekt",
+        shopifyProjectsTitle: "Shopify-butiksutveckling",
+        shopifyProjectsSubtitle: "Professionella e-handelslösningar byggda för tillväxt",
+        shopifyStoreType: "Shopify-butik",
+        ironRepublicDesc: "Komplett e-handelsbutik för återförsäljare av träningsutrustning med anpassat tema, 15+ produkter och mobilfokuserad design.",
+        shopifyComingSoonDesc: "Jag arbetar för närvarande med fler Shopify-projekt. Kom tillbaka snart!",
+
+        // WordPress Projects Page
+        wordpressProjects: "WordPress-Projekt",
+        wpProjectsTitle: "WordPress- & WooCommerce-utveckling",
+        wpProjectsSubtitle: "Anpassade teman och e-handelslösningar",
+        wpThemeType: "WordPress / WooCommerce",
+        wpThemeTitle: "Anpassat WordPress-tema",
+        wpThemeDesc: "Utvecklade och anpassade ett WordPress-tema med skräddarsydda funktioner för kundens affärsbehov.",
+
+        // Web Projects Page
+        webDevProjects: "Webbutvecklingsprojekt",
+        webProjectsTitle: "Anpassade Webbapplikationer",
+        webProjectsSubtitle: "Full-stack-applikationer byggda med moderna teknologier",
+        webAppType: "Webbapplikation",
+        backendType: "Backendutveckling",
+        fullStackType: "Full-Stack-utveckling",
+        webShopTitle: "E-handelsplattform",
+        webShopDesc: "Anpassad e-handelslösning med produktkatalog, kundvagn och betalningsintegration.",
+        weatherAppTitle: "Väderapplikation",
+        weatherAppDesc: "Realtidsväderapp med platsbaserade prognoser och interaktivt gränssnitt.",
+        databaseTitle: "Databaslösningar",
+        databaseDesc: "SQL- och NoSQL-databasdesign, optimering och hantering.",
+
+        // Coming Soon
+        comingSoonTitle: "Fler Projekt Kommer Snart",
+        comingSoonDesc: "Jag arbetar för närvarande med nya projekt. Kom tillbaka snart för uppdateringar!",
+
         // Project Pages
-        backToPortfolio: "← Tillbaka till Portfölj"
+        backToPortfolio: "← Tillbaka till Portfölj",
+
+        // Hero — uppdaterad 2026-09-05 (VerdantCart-fokuserade CTAs)
+        viewCurrentWork: "Se mitt aktuella arbete — VerdantCart AI",
+        viewAllProjects: "Se alla projekt",
+
+        // Fokus-sektion (ersätter Tjänster)
+        focusTitle: "Bygger just nu",
+        focusSubtitle: "Fokuserar heltid på VerdantCart AI — hållbarhetsrapportering med öppen källkod för WooCommerce-handlare världen över.",
+        focusBadge: "🌲 Solo indie · GPL-2.0 · Sverige",
+        focusDesc: "Ett WordPress-pluginekosystem som ger WooCommerce-handlare riktig hållbarhetsrapportering — koldioxid-dashboards, revisionsklara PDF-rapporter, /carbon.txt-publicering och köparfokuserade trust-märken — utan enterprise-SaaS-priser på €500/månad.",
+        focusHighlight1: "<strong>850+</strong> nedladdningar på WordPress.org",
+        focusHighlight2: "<strong>v1.4.0</strong> live · Free + Pro + Pro+-nivåer",
+        focusHighlight3: "I dialog med <strong>Green Web Foundation</strong> om carbon.txt-interoperabilitet",
+        focusHighlight4: "Ansöker om <strong>NLnet Restack</strong>-fonden (nov 2026)",
+        visitVerdantcart: "Besök verdantcart.ai",
+        installFree: "Installera gratis plugin"
     }
 };
 
@@ -216,10 +412,15 @@ function setLanguage(lang) {
     document.querySelectorAll('[data-i18n]').forEach(element => {
         const key = element.getAttribute('data-i18n');
         if (translations[lang] && translations[lang][key]) {
+            const value = translations[lang][key];
             if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
-                element.placeholder = translations[lang][key];
+                element.placeholder = value;
+            } else if (value.includes('<') && value.includes('>')) {
+                // Translation contains HTML (e.g. <strong>). Safe because
+                // translations.js is our own trusted source, not user input.
+                element.innerHTML = value;
             } else {
-                element.textContent = translations[lang][key];
+                element.textContent = value;
             }
         }
     });
