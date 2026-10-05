@@ -196,10 +196,7 @@ const translations = {
         focusSubtitle: "Full-time on VerdantCart AI — open-source sustainability reporting for WooCommerce merchants worldwide.",
         focusBadge: "🌲 Solo indie · GPL-2.0 · Sweden",
         focusDesc: "A WordPress plugin ecosystem giving WooCommerce merchants real sustainability reporting — carbon dashboards, audit-ready PDF reports, /carbon.txt publishing, and buyer trust badges — without €500/month enterprise SaaS pricing.",
-        focusHighlight1: "<strong>850+</strong> downloads on WordPress.org",
-        focusHighlight2: "<strong>v1.4.0</strong> live · Free + Pro + Pro+ tiers",
-        focusHighlight3: "In dialogue with <strong>Green Web Foundation</strong> on carbon.txt interop",
-        focusHighlight4: "Applying to <strong>NLnet Restack</strong> fund (Nov 2026)",
+        focusHighlight1: "<strong>1000+</strong> downloads on WordPress.org",
         visitVerdantcart: "Visit verdantcart.ai",
         installFree: "Install free plugin"
     },
@@ -398,10 +395,7 @@ const translations = {
         focusSubtitle: "Fokuserar heltid på VerdantCart AI — hållbarhetsrapportering med öppen källkod för WooCommerce-handlare världen över.",
         focusBadge: "🌲 Solo indie · GPL-2.0 · Sverige",
         focusDesc: "Ett WordPress-pluginekosystem som ger WooCommerce-handlare riktig hållbarhetsrapportering — koldioxid-dashboards, revisionsklara PDF-rapporter, /carbon.txt-publicering och köparfokuserade trust-märken — utan enterprise-SaaS-priser på €500/månad.",
-        focusHighlight1: "<strong>850+</strong> nedladdningar på WordPress.org",
-        focusHighlight2: "<strong>v1.4.0</strong> live · Free + Pro + Pro+-nivåer",
-        focusHighlight3: "I dialog med <strong>Green Web Foundation</strong> om carbon.txt-interoperabilitet",
-        focusHighlight4: "Ansöker om <strong>NLnet Restack</strong>-fonden (nov 2026)",
+        focusHighlight1: "<strong>1000+</strong> nedladdningar på WordPress.org",
         visitVerdantcart: "Besök verdantcart.ai",
         installFree: "Installera gratis plugin"
     }
